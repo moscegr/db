@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONALEP Chilpancingo - Construcción de Bases de Datos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --conalep-green: #006b44;
+            --conalep-gold: #b39b5c;
+        }
+        .bg-conalep { background-color: var(--conalep-green); }
+        .text-conalep { color: var(--conalep-green); }
+        .border-conalep { border-color: var(--conalep-green); }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 107, 68, 0.85), rgba(0, 107, 68, 0.7)), 
+                        url('https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-conalep flex items-center justify-center rounded-lg text-white font-bold text-xl shadow-inner">C</div>
+                <div>
+                    <h1 class="font-bold text-lg md:text-xl leading-tight text-slate-900">CONALEP Chilpancingo</h1>
+                    <p class="text-sm text-gray-500 font-medium">Plantel 113 • Informática</p>
+                </div>
+            </div>
+            <nav class="hidden lg:flex space-x-6 font-semibold text-xs uppercase tracking-widest">
+                <a href="#inicio" class="hover:text-conalep transition-colors">Inicio</a>
+                <a href="#evaluacion" class="hover:text-conalep transition-colors">Evaluación</a>
+                <a href="#temario" class="hover:text-conalep transition-colors">Temario</a>
+                <a href="#trabajo-inicial" class="bg-conalep text-white px-5 py-2 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all">Trabajo Inicial</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient text-white py-24 px-4 shadow-inner">
+        <div class="container mx-auto text-center">
+            <div class="inline-block bg-white/20 backdrop-blur-md px-4 py-1 rounded-full mb-6 text-sm font-bold uppercase tracking-widest border border-white/30 text-white">
+                Curso Semestral 2025
+            </div>
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-6 drop-shadow-lg">Construcción de Bases de Datos</h2>
+            <p class="text-xl md:text-3xl mb-10 font-light max-w-3xl mx-auto drop-shadow-md">
+                "Aprendiendo a organizar la información que mueve al mundo digital."
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 text-xs font-bold uppercase tracking-widest">
+                <span class="bg-white text-conalep px-6 py-3 rounded-lg shadow-xl">Siglema: COBD-20</span>
+                <span class="bg-conalep/80 border border-white/30 px-6 py-3 rounded-lg shadow-xl backdrop-blur-sm italic">"Igualdad y Paz"</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 py-16">
+        
+        <!-- Galería de Bienvenida -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-24">
+            <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=800&auto=format&fit=crop" class="rounded-3xl shadow-lg h-64 w-full object-cover border-4 border-white" alt="Programación y datos">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" class="rounded-3xl shadow-lg h-64 w-full object-cover border-4 border-white" alt="Tecnología e innovación">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" class="rounded-3xl shadow-lg h-64 w-full object-cover border-4 border-white" alt="Microchips e información">
+        </div>
+
+        <!-- Introducción -->
+        <div class="grid md:grid-cols-2 gap-16 items-start mb-24">
+            <div class="space-y-6">
+                <div class="inline-flex items-center space-x-2 text-conalep font-bold uppercase tracking-wider text-sm">
+                    <span class="w-8 h-1 bg-conalep"></span>
+                    <span>Introducción al Módulo</span>
+                </div>
+                <h3 class="text-4xl font-extrabold text-slate-900 leading-tight">
+                    El corazón de cualquier sistema informático.
+                </h3>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Todo lo que usas hoy (Facebook, WhatsApp, Bancos, Netflix) depende de una **Base de Datos**. En este curso aprenderás a crearlas desde cero siguiendo el ciclo de vida profesional.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100 text-center">
+                        <span class="block text-conalep font-black text-2xl">126</span>
+                        <span class="text-gray-500 text-xs font-bold uppercase">Horas Totales</span>
+                    </div>
+                    <div class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100 text-center">
+                        <span class="block text-conalep font-black text-2xl">7</span>
+                        <span class="text-gray-500 text-xs font-bold uppercase">Horas x Semana</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-10 rounded-3xl shadow-2xl border-t-8 border-conalep relative overflow-hidden">
+                <h3 class="text-2xl font-bold mb-6 flex items-center text-slate-800">
+                    <i class="fas fa-lightbulb text-conalep mr-3"></i> Propósito del Módulo
+                </h3>
+                <p class="text-gray-600 mb-6 italic">
+                    "Diseñar y construir bases de datos mediante el empleo de sistemas manejadores a fin de obtener el almacenamiento, acceso, recuperación y mantenimiento de la información."
+                </p>
+                <ul class="space-y-5">
+                    <li class="flex items-start">
+                        <div class="w-6 h-6 bg-emerald-100 text-conalep rounded-full flex items-center justify-center shrink-0 mt-1 mr-4">
+                            <i class="fas fa-check text-xs"></i>
+                        </div>
+                        <span class="text-gray-700 font-medium">Analizar requerimientos funcionales del usuario.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-6 h-6 bg-emerald-100 text-conalep rounded-full flex items-center justify-center shrink-0 mt-1 mr-4">
+                            <i class="fas fa-check text-xs"></i>
+                        </div>
+                        <span class="text-gray-700 font-medium">Normalizar esquemas para evitar redundancia.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <div class="w-6 h-6 bg-emerald-100 text-conalep rounded-full flex items-center justify-center shrink-0 mt-1 mr-4">
+                            <i class="fas fa-check text-xs"></i>
+                        </div>
+                        <span class="text-gray-700 font-medium">Implementar seguridad y protocolos de respaldo.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Forma de Evaluación -->
+        <section id="evaluacion" class="mb-24">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-slate-900">Esquema de Calificaciones</h3>
+                <p class="text-gray-500 mt-2">Distribución oficial de la evaluación (PAEC)</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-b-4 border-gray-200 text-center">
+                    <div class="w-16 h-16 bg-slate-100 text-conalep rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="text-5xl font-black text-slate-800 mb-2">40%</div>
+                    <h4 class="text-xl font-bold mb-3 text-conalep uppercase tracking-tighter">Firmas y Tareas</h4>
+                    <p class="text-gray-400 text-sm">Incluye mapas mentales, trípticos, TikToks educativos y manuales técnicos según la guía pedagógica.</p>
+                </div>
+                <div class="bg-conalep p-8 rounded-2xl shadow-2xl text-white text-center transform scale-105">
+                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="text-5xl font-black mb-2">50%</div>
+                    <h4 class="text-xl font-bold mb-3 uppercase tracking-tighter">Proyecto Integrador</h4>
+                    <p class="text-emerald-100 text-sm">Construcción progresiva de un sistema real. **Inicia desde el Parcial 1 con el diseño.**</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-b-4 border-gray-200 text-center">
+                    <div class="w-16 h-16 bg-slate-100 text-conalep rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="text-5xl font-black text-slate-800 mb-2">10%</div>
+                    <h4 class="text-xl font-bold mb-3 text-conalep uppercase tracking-tighter">Asistencia</h4>
+                    <p class="text-gray-400 text-sm">Mínimo 80% para tener derecho a evaluación sumativa según reglamento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Temario Detallado -->
+        <section id="temario" class="mb-24">
+            <h3 class="text-4xl font-black text-center mb-16 text-slate-900 uppercase tracking-tighter">Programa de Estudios COBD-20</h3>
+            
+            <div class="space-y-16">
+                <!-- Parcial 1 -->
+                <div id="parcial1" class="flex flex-col lg:flex-row bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100">
+                    <div class="lg:w-2/5 relative">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover" alt="Diseño de bases de datos">
+                        <div class="absolute inset-0 bg-conalep/20 backdrop-blur-[2px]"></div>
+                        <div class="absolute bottom-8 left-8 text-white">
+                            <span class="bg-conalep px-4 py-1 rounded-full text-xs font-black uppercase mb-2 inline-block">Unidad 1</span>
+                            <h4 class="text-3xl font-black">Diseño Relacional</h4>
+                            <p class="text-sm opacity-90 mt-1 italic font-medium">Duración: 60 Horas</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/5 p-10">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h5 class="text-conalep font-black uppercase text-xs tracking-widest mb-4">Temas Principales</h5>
+                                <ul class="space-y-3 text-sm text-gray-600">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Modelo Entidad-Relación:</strong> Atributos, relaciones y cardinalidad.</div></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Normalización:</strong> De la 1ra a la 5ta Forma Normal y Boyce-Codd.</div></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Lenguaje DDL:</strong> CREATE, ALTER y DROP TABLE.</div></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Herramientas CASE:</strong> Uso de software para diseño de casos de uso.</div></li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-3xl border border-dashed border-gray-200">
+                                <h5 class="font-black text-slate-800 text-xs uppercase mb-3"><i class="fas fa-rocket mr-2 text-conalep"></i>Proyecto de Parcial</h5>
+                                <p class="text-xs text-gray-500 leading-relaxed">
+                                    <strong>"Análisis de Requerimientos":</strong> Elección de una empresa local, entrevista al cliente y entrega del diagrama Entidad-Relación normalizado junto con el diccionario de datos.
+                                </p>
+                                <a href="parcial1.html" class="mt-4 w-full bg-conalep text-white text-xs font-bold py-3 rounded-xl inline-flex items-center justify-center hover:opacity-90 transition shadow-lg">
+                                    Ver Recursos Parcial 1 <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parcial 2 -->
+                <div id="parcial2" class="flex flex-col lg:flex-row-reverse bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100">
+                    <div class="lg:w-2/5 relative">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e90526354a?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover" alt="Gestión de datos">
+                        <div class="absolute inset-0 bg-conalep/20 backdrop-blur-[2px]"></div>
+                        <div class="absolute bottom-8 left-8 text-white">
+                            <span class="bg-conalep px-4 py-1 rounded-full text-xs font-black uppercase mb-2 inline-block">Unidad 2</span>
+                            <h4 class="text-3xl font-black">Gestión de Información</h4>
+                            <p class="text-sm opacity-90 mt-1 italic font-medium">Duración: 40 Horas</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/5 p-10">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h5 class="text-conalep font-black uppercase text-xs tracking-widest mb-4">Temas Principales</h5>
+                                <ul class="space-y-3 text-sm text-gray-600">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Lenguaje DML:</strong> INSERT, DELETE FROM, UPDATE SET.</div></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Consultas SQL:</strong> Uso de SELECT, WHERE, ORDER BY y JOINs.</div></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Disparadores (Triggers):</strong> Creación y opciones de uso automático.</div></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Vistas y Reportes:</strong> CREATE VIEW y diseño de formularios.</div></li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-3xl border border-dashed border-gray-200">
+                                <h5 class="font-black text-slate-800 text-xs uppercase mb-3"><i class="fas fa-rocket mr-2 text-conalep"></i>Proyecto de Parcial</h5>
+                                <p class="text-xs text-gray-500 leading-relaxed">
+                                    <strong>"Implementación SQL":</strong> Carga del script de creación en MySQL/MariaDB, inserción de datos reales y creación de las primeras 10 consultas de reporte solicitadas por el cliente.
+                                </p>
+                                <a href="parcial2.html" class="mt-4 w-full bg-conalep text-white text-xs font-bold py-3 rounded-xl inline-flex items-center justify-center hover:opacity-90 transition shadow-lg">
+                                    Ver Recursos Parcial 2 <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parcial 3 -->
+                <div id="parcial3" class="flex flex-col lg:flex-row bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100">
+                    <div class="lg:w-2/5 relative">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover" alt="Seguridad de datos">
+                        <div class="absolute inset-0 bg-conalep/20 backdrop-blur-[2px]"></div>
+                        <div class="absolute bottom-8 left-8 text-white">
+                            <span class="bg-conalep px-4 py-1 rounded-full text-xs font-black uppercase mb-2 inline-block">Unidad 3</span>
+                            <h4 class="text-3xl font-black">Aseguramiento de Datos</h4>
+                            <p class="text-sm opacity-90 mt-1 italic font-medium">Duración: 26 Horas</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-3/5 p-10">
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h5 class="text-conalep font-black uppercase text-xs tracking-widest mb-4">Temas Principales</h5>
+                                <ul class="space-y-3 text-sm text-gray-600">
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Transacciones:</strong> Protocolo de bloqueo en dos fases y recuperación.</div></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Concurrencia:</strong> Técnicas de bloqueo y seriabilidad.</div></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Controles de Acceso:</strong> Roles, perfiles y asignación de privilegios.</div></li>
+                                    <li class="flex items-start"><i class="fas fa-chevron-right text-conalep mt-1 mr-2 text-[10px]"></i> <div><strong>Respaldos (Backup):</strong> Tipos (incrementales/completos) y automatización.</div></li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-3xl border border-dashed border-gray-200">
+                                <h5 class="font-black text-slate-800 text-xs uppercase mb-3"><i class="fas fa-rocket mr-2 text-conalep"></i>Proyecto de Parcial</h5>
+                                <p class="text-xs text-gray-500 leading-relaxed">
+                                    <strong>"Entrega Final":</strong> Configuración de usuarios administrativos y operativos, plan de respaldos diario y demostración de integridad ante fallos.
+                                </p>
+                                <a href="parcial3.html" class="mt-4 w-full bg-conalep text-white text-xs font-bold py-3 rounded-xl inline-flex items-center justify-center hover:opacity-90 transition shadow-lg">
+                                    Ver Recursos Parcial 3 <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trabajo Inicial -->
+        <section id="trabajo-inicial" class="bg-slate-900 text-white p-10 md:p-16 rounded-[3rem] shadow-2xl relative overflow-hidden">
+            <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-conalep/10 rounded-full blur-3xl"></div>
+            
+            <div class="relative z-10">
+                <div class="text-center mb-12">
+                    <span class="text-conalep font-bold tracking-widest text-sm uppercase">Actividad de Apertura</span>
+                    <h3 class="text-4xl font-black mt-2 mb-4">Trabajo Inicial #1</h3>
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-8">
+                        <div class="bg-white/10 p-6 rounded-2xl border border-white/20 flex items-center space-x-4 max-w-md">
+                            <div class="bg-conalep w-12 h-12 rounded-xl flex items-center justify-center shrink-0">
+                                <i class="fas fa-pencil-alt text-xl"></i>
+                            </div>
+                            <p class="text-left text-sm leading-relaxed">
+                                <strong class="text-white block mb-1 uppercase text-xs tracking-tighter">Instrucción Obligatoria:</strong>
+                                Copia las preguntas en tu <span class="text-conalep font-bold">libreta</span> y subraya la respuesta correcta con tinta roja.
+                            </p>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?q=80&w=300&h=200&auto=format&fit=crop" class="rounded-2xl hidden md:block shadow-2xl border-2 border-white/10" alt="Libreta de apuntes">
+                    </div>
+                </div>
+
+                <!-- Lista de Preguntas Cotidianas -->
+                <div class="grid gap-8 max-w-4xl mx-auto mt-16">
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:border-conalep/50 transition-colors">
+                        <div class="flex gap-4">
+                            <span class="bg-conalep w-8 h-8 rounded-lg flex items-center justify-center font-bold shrink-0">1</span>
+                            <div>
+                                <h5 class="text-lg font-bold mb-6 italic text-gray-200">¿Dónde guardas normalmente los números telefónicos de tus amigos?</h5>
+                                <div class="grid gap-3">
+                                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-gray-400">a) En la lista de contactos de mi celular</div>
+                                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-gray-400">b) En un pedazo de papel que siempre pierdo</div>
+                                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-gray-400">c) Me los aprendo todos de memoria</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:border-conalep/50 transition-colors">
+                        <div class="flex gap-4">
+                            <span class="bg-conalep w-8 h-8 rounded-lg flex items-center justify-center font-bold shrink-0">2</span>
+                            <div>
+                                <h5 class="text-lg font-bold mb-6 italic text-gray-200">¿Por qué es importante tener una contraseña en tus redes sociales?</h5>
+                                <div class="grid gap-3">
+                                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-gray-400">a) Por seguridad, para que nadie más entre a ver mis cosas</div>
+                                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-gray-400">b) Porque la aplicación me obliga a poner una</div>
+                                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-gray-400">c) Solo para que mi perfil se vea más importante</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 p-8 rounded-3xl border border-white/10 hover:border-conalep/50 transition-colors">
+                        <div class="flex gap-4">
+                            <span class="bg-conalep w-8 h-8 rounded-lg flex items-center justify-center font-bold shrink-0">3</span>
+                            <div>
+                                <h5 class="text-lg font-bold mb-6 italic text-gray-200">Si buscas una foto de hace un año en tu celular, ¿qué usas para encontrarla rápido?</h5>
+                                <div class="grid gap-3">
+                                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-gray-400">a) El buscador por fecha o los álbumes</div>
+                                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-gray-400">b) Bajo toda la lista de fotos una por una</div>
+                                    <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-gray-400">c) Le pregunto a mis amigos si ellos la tienen</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12 text-gray-500 font-bold uppercase tracking-widest text-xs">
+                    Actividad Diagnóstica • COBD-20
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-50 py-16 border-t border-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <img src="https://www.conalep.edu.mx/sites/default/files/images/logo_conalep.png" alt="CONALEP Logo" class="h-16 mx-auto mb-8 grayscale opacity-50">
+            <div class="max-w-xl mx-auto">
+                <p class="text-slate-900 font-bold mb-2 uppercase tracking-widest text-sm">Colegio Nacional de Educación Profesional Técnica</p>
+                <p class="text-gray-500 mb-6 font-medium">Plantel Chilpancingo 113 • Guerrero, México</p>
+                <p class="text-gray-400 text-xs border-t pt-8 leading-loose">
+                    © 2025 CONALEP • Módulo: Construcción de Bases de Datos (COBD-20)<br>
+                    Profesional Técnico-Bachiller en Informática
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
