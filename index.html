@@ -23,15 +23,15 @@
         html { scroll-behavior: smooth; }
     </style>
 </head>
-<body class="bg-gray-50 font-sans text-gray-800">
+<body class="bg-gray-50 font-sans text-gray-800 antialiased">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-4">
                 <div>
-                    <h1 class="font-bold text-lg md:text-xl leading-tight text-slate-900">CONALEP Chilpancingo</h1>
-                    <p class="text-sm text-gray-500 font-medium">Plantel 113 • Informática</p>
+                    <h1 class="font-bold text-base sm:text-lg md:text-xl leading-tight text-slate-900">CONALEP Chilpancingo</h1>
+                    <p class="text-xs sm:text-sm text-gray-500 font-medium">Plantel 113 • Informática</p>
                 </div>
             </div>
             <nav class="hidden lg:flex space-x-6 font-semibold text-xs uppercase tracking-widest">
@@ -40,65 +40,69 @@
                 <a href="#temario" class="hover:text-conalep transition-colors">Temario</a>
                 <a href="#trabajo-inicial" class="bg-conalep text-white px-5 py-2 rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all">Trabajo Inicial</a>
             </nav>
+            <!-- Mobile Menu Icon (Visual only) -->
+            <div class="lg:hidden text-conalep">
+                <i class="fas fa-bars text-xl"></i>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="inicio" class="hero-gradient text-white py-24 px-4 shadow-inner">
+    <section id="inicio" class="hero-gradient text-white py-20 md:py-32 px-4 shadow-inner">
         <div class="container mx-auto text-center">
-            <div class="inline-block bg-white/20 backdrop-blur-md px-4 py-1 rounded-full mb-6 text-sm font-bold uppercase tracking-widest border border-white/30 text-white">
+            <div class="inline-block bg-white/20 backdrop-blur-md px-4 py-1 rounded-full mb-6 text-[10px] sm:text-xs font-bold uppercase tracking-widest border border-white/30 text-white">
                 Curso Semestral 2025
             </div>
-            <h2 class="text-5xl md:text-7xl font-extrabold mb-6 drop-shadow-lg text-white">Construcción de Bases de Datos</h2>
-            <p class="text-xl md:text-3xl mb-10 font-light max-w-3xl mx-auto drop-shadow-md text-white">
+            <h2 class="text-3xl sm:text-5xl md:text-7xl font-extrabold mb-6 drop-shadow-lg text-white leading-tight">Construcción de <br class="hidden sm:block"> Bases de Datos</h2>
+            <p class="text-lg sm:text-xl md:text-3xl mb-10 font-light max-w-3xl mx-auto drop-shadow-md text-white px-4">
                 "Aprendiendo a organizar la información que mueve al mundo digital."
             </p>
-            <div class="flex flex-wrap justify-center gap-4 text-xs font-bold uppercase tracking-widest">
-                <span class="bg-white text-conalep px-6 py-3 rounded-lg shadow-xl">Siglema: COBD-20</span>
-                <span class="bg-conalep/80 border border-white/30 px-6 py-3 rounded-lg shadow-xl backdrop-blur-sm italic text-white">"Igualdad y Paz"</span>
+            <div class="flex flex-wrap justify-center gap-3 sm:gap-4 text-[10px] sm:text-xs font-bold uppercase tracking-widest px-4">
+                <span class="bg-white text-conalep px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow-xl">Siglema: COBD-20</span>
+                <span class="bg-conalep/80 border border-white/30 px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow-xl backdrop-blur-sm italic text-white">"Igualdad y Paz"</span>
             </div>
         </div>
     </section>
 
-    <main class="container mx-auto px-4 py-16">
+    <main class="container mx-auto px-4 sm:px-6 py-12 md:py-20">
         
         <!-- Galería de Bienvenida Ampliada -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-24">
-            <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg h-48 w-full object-cover border-2 border-white" alt="Datos 1">
-            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg h-48 w-full object-cover border-2 border-white" alt="Datos 2">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg h-48 w-full object-cover border-2 border-white" alt="Datos 3">
-            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg h-48 w-full object-cover border-2 border-white" alt="Datos 4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20 md:mb-28">
+            <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg h-32 sm:h-48 w-full object-cover border-2 border-white" alt="Datos 1">
+            <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg h-32 sm:h-48 w-full object-cover border-2 border-white" alt="Servidor Rack">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg h-32 sm:h-48 w-full object-cover border-2 border-white" alt="Datos 3">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop" class="rounded-2xl shadow-lg h-32 sm:h-48 w-full object-cover border-2 border-white" alt="Datos 4">
         </div>
 
         <!-- Introducción -->
-        <div class="grid md:grid-cols-2 gap-16 items-start mb-24">
+        <div class="grid lg:grid-cols-2 gap-10 md:gap-16 items-start mb-20 md:mb-28">
             <div class="space-y-6">
-                <div class="inline-flex items-center space-x-2 text-conalep font-bold uppercase tracking-wider text-sm">
+                <div class="inline-flex items-center space-x-2 text-conalep font-bold uppercase tracking-wider text-xs sm:text-sm">
                     <span class="w-8 h-1 bg-conalep"></span>
                     <span>Introducción al Módulo</span>
                 </div>
-                <h3 class="text-4xl font-extrabold text-slate-900 leading-tight">
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight">
                     El corazón de cualquier sistema informático.
                 </h3>
-                <p class="text-xl text-gray-600 leading-relaxed">
+                <p class="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
                     Todo lo que usas hoy depende de una **Base de Datos**. En este curso aprenderás a crearlas siguiendo el ciclo de vida profesional del currículo laboral de **Informática**.
                 </p>
                 <div class="grid grid-cols-2 gap-4 mt-8">
                     <div class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100 text-center">
-                        <span class="block text-conalep font-black text-2xl">126</span>
-                        <span class="text-gray-500 text-xs font-bold uppercase">Horas Totales</span>
+                        <span class="block text-conalep font-black text-xl sm:text-2xl">126</span>
+                        <span class="text-gray-500 text-[10px] font-bold uppercase tracking-tighter">Horas Totales</span>
                     </div>
                     <div class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100 text-center">
-                        <span class="block text-conalep font-black text-2xl">7</span>
-                        <span class="text-gray-500 text-xs font-bold uppercase">Horas x Semana</span>
+                        <span class="block text-conalep font-black text-xl sm:text-2xl">7</span>
+                        <span class="text-gray-500 text-[10px] font-bold uppercase tracking-tighter">Horas x Semana</span>
                     </div>
                 </div>
             </div>
-            <div class="bg-white p-10 rounded-3xl shadow-2xl border-t-8 border-conalep relative overflow-hidden">
-                <h3 class="text-2xl font-bold mb-6 flex items-center text-slate-800">
+            <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-xl border-t-8 border-conalep relative overflow-hidden">
+                <h3 class="text-xl sm:text-2xl font-bold mb-6 flex items-center text-slate-800">
                     <i class="fas fa-lightbulb text-conalep mr-3"></i> Propósito del Módulo
                 </h3>
-                <p class="text-gray-600 mb-6 italic text-sm">
+                <p class="text-gray-600 mb-6 italic text-sm leading-relaxed">
                     "Diseñar y construir bases de datos mediante el empleo de sistemas manejadores a fin de obtener el almacenamiento, acceso, recuperación y mantenimiento de la información."
                 </p>
                 <ul class="space-y-4">
@@ -106,87 +110,86 @@
                         <div class="w-5 h-5 bg-emerald-100 text-conalep rounded-full flex items-center justify-center shrink-0 mt-1 mr-3">
                             <i class="fas fa-check text-[10px]"></i>
                         </div>
-                        <span class="text-gray-700 font-medium text-xs">Analizar requerimientos funcionales del usuario.</span>
+                        <span class="text-gray-700 font-medium text-xs sm:text-sm leading-snug">Analizar requerimientos funcionales del usuario.</span>
                     </li>
                     <li class="flex items-start">
                         <div class="w-5 h-5 bg-emerald-100 text-conalep rounded-full flex items-center justify-center shrink-0 mt-1 mr-3">
                             <i class="fas fa-check text-[10px]"></i>
                         </div>
-                        <span class="text-gray-700 font-medium text-xs">Normalizar esquemas para evitar redundancia.</span>
+                        <span class="text-gray-700 font-medium text-xs sm:text-sm leading-snug">Normalizar esquemas para evitar redundancia.</span>
                     </li>
                     <li class="flex items-start">
                         <div class="w-5 h-5 bg-emerald-100 text-conalep rounded-full flex items-center justify-center shrink-0 mt-1 mr-3">
                             <i class="fas fa-check text-[10px]"></i>
                         </div>
-                        <span class="text-gray-700 font-medium text-xs">Implementar seguridad y protocolos de respaldo.</span>
+                        <span class="text-gray-700 font-medium text-xs sm:text-sm leading-snug">Implementar seguridad y protocolos de respaldo.</span>
                     </li>
                 </ul>
             </div>
         </div>
 
         <!-- Forma de Evaluación -->
-        <section id="evaluacion" class="mb-24">
-            <div class="text-center mb-12">
-                <h3 class="text-3xl font-bold text-slate-900">Esquema de Calificaciones</h3>
-                <p class="text-gray-500 mt-2">Distribución oficial de la evaluación (PAEC)</p>
+        <section id="evaluacion" class="mb-20 md:mb-28">
+            <div class="text-center mb-10 sm:mb-12">
+                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">Esquema de Calificaciones</h3>
+                <p class="text-sm sm:text-base text-gray-500 mt-2">Distribución oficial de la evaluación (PAEC)</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-xl border-b-4 border-gray-200 text-center">
-                    <div class="w-16 h-16 bg-slate-100 text-conalep rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border-b-4 border-gray-200 text-center">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-slate-100 text-conalep rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-6 mx-auto">
                         <i class="fas fa-book"></i>
                     </div>
-                    <div class="text-5xl font-black text-slate-800 mb-2">40%</div>
-                    <h4 class="text-xl font-bold mb-3 text-conalep uppercase tracking-tighter">Firmas y Tareas</h4>
-                    <p class="text-gray-400 text-sm italic">Mapas, manuales y ejercicios técnicos.</p>
+                    <div class="text-4xl sm:text-5xl font-black text-slate-800 mb-2">40%</div>
+                    <h4 class="text-lg sm:text-xl font-bold mb-3 text-conalep uppercase tracking-tighter">Firmas y Tareas</h4>
+                    <p class="text-gray-400 text-xs sm:text-sm italic">Mapas, manuales y ejercicios técnicos.</p>
                 </div>
-                <div class="bg-conalep p-8 rounded-2xl shadow-2xl text-white text-center transform scale-105">
-                    <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
+                <div class="bg-conalep p-6 sm:p-8 rounded-2xl shadow-xl text-white text-center transform md:scale-105">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-white/20 rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-6 mx-auto">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <div class="text-5xl font-black mb-2 text-white">50%</div>
-                    <h4 class="text-xl font-bold mb-3 uppercase tracking-tighter text-white">Proyecto Integrador</h4>
-                    <p class="text-emerald-100 text-sm">Se construye progresivamente durante los 3 parciales.</p>
+                    <div class="text-4xl sm:text-5xl font-black mb-2 text-white">50%</div>
+                    <h4 class="text-lg sm:text-xl font-bold mb-3 uppercase tracking-tighter text-white">Proyecto Integrador</h4>
+                    <p class="text-emerald-100 text-xs sm:text-sm">Se construye progresivamente durante los 3 parciales.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-xl border-b-4 border-gray-200 text-center">
-                    <div class="w-16 h-16 bg-slate-100 text-conalep rounded-full flex items-center justify-center text-3xl mb-6 mx-auto">
+                <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border-b-4 border-gray-200 text-center">
+                    <div class="w-14 h-14 sm:w-16 sm:h-16 bg-slate-100 text-conalep rounded-full flex items-center justify-center text-2xl sm:text-3xl mb-6 mx-auto">
                         <i class="fas fa-calendar-alt"></i>
                     </div>
-                    <div class="text-5xl font-black text-slate-800 mb-2">10%</div>
-                    <h4 class="text-xl font-bold mb-3 text-conalep uppercase tracking-tighter">Asistencia</h4>
-                    <p class="text-gray-400 text-sm italic">Mínimo 80% para derecho a evaluación.</p>
+                    <div class="text-4xl sm:text-5xl font-black text-slate-800 mb-2">10%</div>
+                    <h4 class="text-lg sm:text-xl font-bold mb-3 text-conalep uppercase tracking-tighter">Asistencia</h4>
+                    <p class="text-gray-400 text-xs sm:text-sm italic">Mínimo 80% para derecho a evaluación.</p>
                 </div>
             </div>
         </section>
 
         <!-- Temario Detallado -->
-        <section id="temario" class="mb-24">
-            <h3 class="text-4xl font-black text-center mb-16 text-slate-900 uppercase tracking-tighter">Programa de Estudios COBD-20</h3>
+        <section id="temario" class="mb-20 md:mb-28">
+            <h3 class="text-3xl sm:text-4xl font-black text-center mb-12 md:mb-16 text-slate-900 uppercase tracking-tighter">Programa COBD-20</h3>
             
-            <div class="space-y-16">
+            <div class="space-y-12 md:space-y-16">
                 <!-- Parcial 1 -->
-                <div id="parcial1" class="flex flex-col lg:flex-row bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100 min-h-[400px]">
-                    <div class="lg:w-2/5 relative min-h-[300px]">
+                <div id="parcial1" class="flex flex-col lg:flex-row bg-white rounded-3xl md:rounded-[2.5rem] shadow-xl overflow-hidden border border-gray-100 min-h-[400px]">
+                    <div class="lg:w-2/5 relative min-h-[250px] sm:min-h-[300px]">
                         <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover" alt="Diseño de bases de datos">
-                        <div class="absolute inset-0 bg-conalep/20 backdrop-blur-[2px]"></div>
-                        <div class="absolute bottom-8 left-8 text-white z-10">
-                            <span class="bg-conalep px-4 py-1 rounded-full text-xs font-black uppercase mb-2 inline-block">Unidad 1</span>
-                            <h4 class="text-3xl font-black text-white">Diseño Relacional</h4>
-                            <p class="text-sm opacity-90 mt-1 italic font-medium">60 Horas lectivas</p>
+                        <div class="absolute inset-0 bg-gradient-to-t from-conalep/80 via-conalep/40 to-transparent"></div>
+                        <div class="absolute bottom-6 sm:bottom-8 left-6 sm:left-8 text-white z-10">
+                            <span class="bg-conalep px-3 sm:px-4 py-1 rounded-full text-[10px] font-black uppercase mb-2 inline-block">Unidad 1</span>
+                            <h4 class="text-2xl sm:text-3xl font-black text-white leading-tight">Diseño Relacional</h4>
+                            <p class="text-xs sm:text-sm opacity-90 mt-1 italic font-medium">60 Horas lectivas</p>
                         </div>
                     </div>
-                    <div class="lg:w-3/5 p-10">
-                        <h4 class="text-2xl font-black text-slate-800 mb-6 lg:hidden uppercase tracking-tighter">Unidad 1: Diseño Relacional</h4>
-                        <div class="grid md:grid-cols-2 gap-8">
+                    <div class="lg:w-3/5 p-6 sm:p-10">
+                        <div class="grid sm:grid-cols-2 gap-8">
                             <div>
                                 <h5 class="text-conalep font-black uppercase text-xs tracking-widest mb-4 border-b border-emerald-100 pb-2">Temario Técnico</h5>
-                                <ul class="space-y-2 text-xs text-gray-600">
+                                <ul class="space-y-3 text-xs text-gray-600">
                                     <li class="flex items-start"><strong>1.1 Diseño Conceptual:</strong> E-R, Atributos, Entidades Fuertes y Débiles.</li>
                                     <li class="flex items-start"><strong>1.2 Estructura Lógica:</strong> Normalización (1ra a 5ta forma) y Boyce-Codd.</li>
                                     <li class="flex items-start"><strong>1.3 Diseño Físico:</strong> Comandos DDL, Herramientas CASE.</li>
                                 </ul>
                             </div>
-                            <div class="bg-gray-50 p-6 rounded-3xl border border-dashed border-gray-200">
-                                <h5 class="font-black text-slate-800 text-xs uppercase mb-3"><i class="fas fa-rocket mr-2 text-conalep"></i>Proyecto: Etapa 1</h5>
+                            <div class="bg-gray-50 p-5 sm:p-6 rounded-3xl border border-dashed border-gray-200">
+                                <h5 class="font-black text-slate-800 text-[10px] sm:text-xs uppercase mb-3"><i class="fas fa-rocket mr-2 text-conalep"></i>Proyecto: Etapa 1</h5>
                                 <p class="text-[10px] text-gray-500 leading-relaxed mb-4">
                                     <strong>"Análisis de Caso":</strong> Entrega de Diagrama E-R normalizado y diccionario de datos.
                                 </p>
@@ -199,30 +202,29 @@
                 </div>
 
                 <!-- Parcial 2 -->
-                <div id="parcial2" class="flex flex-col lg:flex-row-reverse bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100 min-h-[400px]">
-                    <div class="lg:w-2/5 relative min-h-[300px]">
+                <div id="parcial2" class="flex flex-col lg:flex-row-reverse bg-white rounded-3xl md:rounded-[2.5rem] shadow-xl overflow-hidden border border-gray-100 min-h-[400px]">
+                    <div class="lg:w-2/5 relative min-h-[250px] sm:min-h-[300px]">
                         <img src="https://images.unsplash.com/photo-1633412802994-5c058f151b66?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover" alt="Gestión de datos">
-                        <div class="absolute inset-0 bg-conalep/20 backdrop-blur-[2px]"></div>
-                        <div class="absolute bottom-8 left-8 text-white z-10">
-                            <span class="bg-conalep px-4 py-1 rounded-full text-xs font-black uppercase mb-2 inline-block">Unidad 2</span>
-                            <h4 class="text-3xl font-black text-white">Gestión de Información</h4>
-                            <p class="text-sm opacity-90 mt-1 italic font-medium">40 Horas lectivas</p>
+                        <div class="absolute inset-0 bg-gradient-to-t from-conalep/80 via-conalep/40 to-transparent"></div>
+                        <div class="absolute bottom-6 sm:bottom-8 left-6 sm:left-8 text-white z-10">
+                            <span class="bg-conalep px-3 sm:px-4 py-1 rounded-full text-[10px] font-black uppercase mb-2 inline-block">Unidad 2</span>
+                            <h4 class="text-2xl sm:text-3xl font-black text-white leading-tight">Gestión de Información</h4>
+                            <p class="text-xs sm:text-sm opacity-90 mt-1 italic font-medium">40 Horas lectivas</p>
                         </div>
                     </div>
-                    <div class="lg:w-3/5 p-10">
-                        <h4 class="text-2xl font-black text-slate-800 mb-6 uppercase tracking-tighter">Unidad 2: Gestión de Información</h4>
-                        <div class="grid md:grid-cols-2 gap-8">
+                    <div class="lg:w-3/5 p-6 sm:p-10">
+                        <div class="grid sm:grid-cols-2 gap-8">
                             <div>
                                 <h5 class="text-conalep font-black uppercase text-xs tracking-widest mb-4 border-b border-emerald-100 pb-2">Temario Técnico</h5>
-                                <ul class="space-y-2 text-xs text-gray-600">
+                                <ul class="space-y-3 text-xs text-gray-600">
                                     <li class="flex items-start"><strong>2.1 Consultas SQL:</strong> SELECT, WHERE, JOINs, Operadores lógicos.</li>
                                     <li class="flex items-start"><strong>2.1 DML:</strong> INSERT INTO, DELETE, UPDATE registros.</li>
                                     <li class="flex items-start"><strong>2.2 Disparadores:</strong> CREATE TRIGGER y automatización.</li>
                                     <li class="flex items-start"><strong>2.2 Vistas:</strong> Vistas de tablas, formularios y reportes.</li>
                                 </ul>
                             </div>
-                            <div class="bg-gray-50 p-6 rounded-3xl border border-dashed border-gray-200">
-                                <h5 class="font-black text-slate-800 text-xs uppercase mb-3"><i class="fas fa-rocket mr-2 text-conalep"></i>Proyecto: Etapa 2</h5>
+                            <div class="bg-gray-50 p-5 sm:p-6 rounded-3xl border border-dashed border-gray-200">
+                                <h5 class="font-black text-slate-800 text-[10px] sm:text-xs uppercase mb-3"><i class="fas fa-rocket mr-2 text-conalep"></i>Proyecto: Etapa 2</h5>
                                 <p class="text-[10px] text-gray-500 leading-relaxed mb-4">
                                     <strong>"Manipulación":</strong> Script SQL con carga de registros reales y reportes mediante vistas.
                                 </p>
@@ -235,30 +237,29 @@
                 </div>
 
                 <!-- Parcial 3 -->
-                <div id="parcial3" class="flex flex-col lg:flex-row bg-white rounded-[2.5rem] shadow-2xl overflow-hidden border border-gray-100 min-h-[400px]">
-                    <div class="lg:w-2/5 relative min-h-[300px]">
+                <div id="parcial3" class="flex flex-col lg:flex-row bg-white rounded-3xl md:rounded-[2.5rem] shadow-xl overflow-hidden border border-gray-100 min-h-[400px]">
+                    <div class="lg:w-2/5 relative min-h-[250px] sm:min-h-[300px]">
                         <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop" class="h-full w-full object-cover" alt="Seguridad de datos">
-                        <div class="absolute inset-0 bg-conalep/20 backdrop-blur-[2px]"></div>
-                        <div class="absolute bottom-8 left-8 text-white z-10">
-                            <span class="bg-conalep px-4 py-1 rounded-full text-xs font-black uppercase mb-2 inline-block">Unidad 3</span>
-                            <h4 class="text-3xl font-black text-white">Aseguramiento de Datos</h4>
-                            <p class="text-sm opacity-90 mt-1 italic font-medium">26 Horas lectivas</p>
+                        <div class="absolute inset-0 bg-gradient-to-t from-conalep/80 via-conalep/40 to-transparent"></div>
+                        <div class="absolute bottom-6 sm:bottom-8 left-6 sm:left-8 text-white z-10">
+                            <span class="bg-conalep px-3 sm:px-4 py-1 rounded-full text-[10px] font-black uppercase mb-2 inline-block">Unidad 3</span>
+                            <h4 class="text-2xl sm:text-3xl font-black text-white leading-tight">Aseguramiento de Datos</h4>
+                            <p class="text-xs sm:text-sm opacity-90 mt-1 italic font-medium">26 Horas lectivas</p>
                         </div>
                     </div>
-                    <div class="lg:w-3/5 p-10">
-                        <h4 class="text-2xl font-black text-slate-800 mb-6 lg:hidden uppercase tracking-tighter">Unidad 3: Aseguramiento de Datos</h4>
-                        <div class="grid md:grid-cols-2 gap-8">
+                    <div class="lg:w-3/5 p-6 sm:p-10">
+                        <div class="grid sm:grid-cols-2 gap-8">
                             <div>
                                 <h5 class="text-conalep font-black uppercase text-xs tracking-widest mb-4 border-b border-emerald-100 pb-2">Temario Técnico</h5>
-                                <ul class="space-y-2 text-xs text-gray-600">
+                                <ul class="space-y-3 text-xs text-gray-600">
                                     <li class="flex items-start"><strong>3.1 Transacciones:</strong> Protocolo de bloqueo y recuperación.</li>
                                     <li class="flex items-start"><strong>3.1 Concurrencia:</strong> Técnicas de bloqueo y seriabilidad.</li>
                                     <li class="flex items-start"><strong>3.2 Seguridad:</strong> Roles, Privilegios y Cifrado.</li>
                                     <li class="flex items-start"><strong>3.2 Respaldos:</strong> Backups incrementales y completos.</li>
                                 </ul>
                             </div>
-                            <div class="bg-gray-50 p-6 rounded-3xl border border-dashed border-gray-200">
-                                <h5 class="font-black text-slate-800 text-xs uppercase mb-3"><i class="fas fa-rocket mr-2 text-conalep"></i>Proyecto: Etapa Final</h5>
+                            <div class="bg-gray-50 p-5 sm:p-6 rounded-3xl border border-dashed border-gray-200">
+                                <h5 class="font-black text-slate-800 text-[10px] sm:text-xs uppercase mb-3"><i class="fas fa-rocket mr-2 text-conalep"></i>Proyecto: Etapa Final</h5>
                                 <p class="text-[10px] text-gray-500 leading-relaxed mb-4">
                                     <strong>"Cierre":</strong> Implementación de roles, plan de respaldos y demostración de seguridad.
                                 </p>
@@ -273,47 +274,47 @@
         </section>
 
         <!-- Galería de Imágenes Adicionales -->
-        <section class="mb-24">
-            <h3 class="text-2xl font-bold text-center mb-8 text-slate-800 uppercase tracking-tighter">Entorno Tecnológico Bases de Datos</h3>
+        <section class="mb-20 md:mb-28">
+            <h3 class="text-xl sm:text-2xl font-bold text-center mb-8 text-slate-800 uppercase tracking-tighter">Entorno Tecnológico</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="overflow-hidden rounded-3xl shadow-lg border-2 border-white transform hover:scale-105 transition">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=600&auto=format&fit=crop" class="w-full h-48 object-cover" alt="Servidores racks">
+                <div class="overflow-hidden rounded-3xl shadow-lg border-2 border-white transform hover:scale-[1.02] transition">
+                    <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?q=80&w=800&auto=format&fit=crop" class="w-full h-48 object-cover" alt="Servidores racks profesionales">
                 </div>
-                <div class="overflow-hidden rounded-3xl shadow-lg border-2 border-white transform hover:scale-105 transition">
-                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=600&auto=format&fit=crop" class="w-full h-48 object-cover" alt="Laptop código">
+                <div class="overflow-hidden rounded-3xl shadow-lg border-2 border-white transform hover:scale-[1.02] transition">
+                    <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=600&auto=format&fit=crop" class="w-full h-48 object-cover" alt="Desarrollo de Software">
                 </div>
-                <div class="overflow-hidden rounded-3xl shadow-lg border-2 border-white transform hover:scale-105 transition">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop" class="w-full h-48 object-cover" alt="Gráficas de datos">
+                <div class="overflow-hidden rounded-3xl shadow-lg border-2 border-white transform hover:scale-[1.02] transition">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop" class="w-full h-48 object-cover" alt="Gestión de Información">
                 </div>
             </div>
         </section>
 
         <!-- Trabajo Inicial (10 Preguntas) -->
-        <section id="trabajo-inicial" class="bg-slate-900 text-white p-10 md:p-16 rounded-[3rem] shadow-2xl relative overflow-hidden">
+        <section id="trabajo-inicial" class="bg-slate-900 text-white p-6 sm:p-10 md:p-16 rounded-3xl md:rounded-[3rem] shadow-2xl relative overflow-hidden">
             <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-conalep/10 rounded-full blur-3xl"></div>
             
             <div class="relative z-10">
-                <div class="text-center mb-12">
-                    <span class="text-conalep font-bold tracking-widest text-sm uppercase">Cuestionario de Introducción</span>
-                    <h3 class="text-4xl font-black mt-2 mb-4 text-white">Trabajo Inicial #1</h3>
+                <div class="text-center mb-10 md:mb-12">
+                    <span class="text-conalep font-bold tracking-widest text-[10px] sm:text-xs uppercase">Cuestionario de Introducción</span>
+                    <h3 class="text-3xl sm:text-4xl font-black mt-2 mb-4 text-white">Trabajo Inicial #1</h3>
                     
-                    <div class="bg-white/10 p-6 rounded-2xl border border-white/20 inline-block max-w-md">
-                        <p class="text-left text-sm leading-relaxed text-gray-200">
-                            <strong class="text-white block mb-1 uppercase text-xs tracking-tighter underline">Instrucción:</strong>
+                    <div class="bg-white/10 p-5 rounded-2xl border border-white/20 inline-block max-w-md">
+                        <p class="text-left text-xs sm:text-sm leading-relaxed text-gray-200">
+                            <strong class="text-white block mb-1 uppercase text-[10px] sm:text-xs tracking-tighter underline">Instrucción:</strong>
                             Copia las **10 preguntas** en tu libreta y subraya la respuesta correcta con tinta roja.
                         </p>
                     </div>
                 </div>
 
                 <!-- Lista de 10 Preguntas -->
-                <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mt-16">
+                <div class="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto mt-10 md:mt-16">
                     <!-- Pregunta 1 -->
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10">
                         <div class="flex gap-4">
                             <span class="bg-conalep w-7 h-7 rounded flex items-center justify-center font-bold shrink-0 text-white text-xs">1</span>
                             <div>
-                                <h5 class="text-sm font-bold mb-4 text-gray-200">¿Dónde guardas normalmente los números telefónicos de tus amigos?</h5>
-                                <div class="space-y-2 text-xs text-gray-400">
+                                <h5 class="text-xs sm:text-sm font-bold mb-4 text-gray-200">¿Dónde guardas normalmente los números telefónicos de tus amigos?</h5>
+                                <div class="space-y-2 text-[10px] sm:text-xs text-gray-400">
                                     <p>a) Lista de contactos del celular</p>
                                     <p>b) En un pedazo de papel</p>
                                     <p>c) De memoria</p>
@@ -322,12 +323,12 @@
                         </div>
                     </div>
                     <!-- Pregunta 2 -->
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10">
                         <div class="flex gap-4">
                             <span class="bg-conalep w-7 h-7 rounded flex items-center justify-center font-bold shrink-0 text-white text-xs">2</span>
                             <div>
-                                <h5 class="text-sm font-bold mb-4 text-gray-200">¿Para qué sirve crear una 'contraseña' en tus redes sociales?</h5>
-                                <div class="space-y-2 text-xs text-gray-400">
+                                <h5 class="text-xs sm:text-sm font-bold mb-4 text-gray-200">¿Para qué sirve crear una 'contraseña' en tus redes sociales?</h5>
+                                <div class="space-y-2 text-[10px] sm:text-xs text-gray-400">
                                     <p>a) Para que se vea más profesional</p>
                                     <p>b) Por seguridad y privacidad</p>
                                     <p>c) Para que la app sea más rápida</p>
@@ -336,12 +337,12 @@
                         </div>
                     </div>
                     <!-- Pregunta 3 -->
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10">
                         <div class="flex gap-4">
                             <span class="bg-conalep w-7 h-7 rounded flex items-center justify-center font-bold shrink-0 text-white text-xs">3</span>
                             <div>
-                                <h5 class="text-sm font-bold mb-4 text-gray-200">¿Qué usas para encontrar una foto vieja en tu galería rápidamente?</h5>
-                                <div class="space-y-2 text-xs text-gray-400">
+                                <h5 class="text-xs sm:text-sm font-bold mb-4 text-gray-200">¿Qué usas para encontrar una foto vieja en tu galería rápidamente?</h5>
+                                <div class="space-y-2 text-[10px] sm:text-xs text-gray-400">
                                     <p>a) El buscador o álbumes</p>
                                     <p>b) Bajo una por una</p>
                                     <p>c) Le pido a un amigo la foto</p>
@@ -350,12 +351,12 @@
                         </div>
                     </div>
                     <!-- Pregunta 4 -->
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10">
                         <div class="flex gap-4">
                             <span class="bg-conalep w-7 h-7 rounded flex items-center justify-center font-bold shrink-0 text-white text-xs">4</span>
                             <div>
-                                <h5 class="text-sm font-bold mb-4 text-gray-200">¿Dónde crees que la escuela guarda tu historial de calificaciones?</h5>
-                                <div class="space-y-2 text-xs text-gray-400">
+                                <h5 class="text-xs sm:text-sm font-bold mb-4 text-gray-200">¿Dónde crees que la escuela guarda tu historial de calificaciones?</h5>
+                                <div class="space-y-2 text-[10px] sm:text-xs text-gray-400">
                                     <p>a) En una libreta vieja</p>
                                     <p>b) En una computadora (Sistema Escolar)</p>
                                     <p>c) En un pizarrón</p>
@@ -364,12 +365,12 @@
                         </div>
                     </div>
                     <!-- Pregunta 5 -->
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10">
                         <div class="flex gap-4">
                             <span class="bg-conalep w-7 h-7 rounded flex items-center justify-center font-bold shrink-0 text-white text-xs">5</span>
                             <div>
-                                <h5 class="text-sm font-bold mb-4 text-gray-200">¿Qué pasaría si el banco perdiera los datos de cuánto dinero tienes?</h5>
-                                <div class="space-y-2 text-xs text-gray-400">
+                                <h5 class="text-xs sm:text-sm font-bold mb-4 text-gray-200">¿Qué pasaría si el banco perdiera los datos de cuánto dinero tienes?</h5>
+                                <div class="space-y-2 text-[10px] sm:text-xs text-gray-400">
                                     <p>a) No pasaría nada importante</p>
                                     <p>b) Sería un desastre financiero</p>
                                     <p>c) Me darían más dinero</p>
@@ -378,12 +379,12 @@
                         </div>
                     </div>
                     <!-- Pregunta 6 -->
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10">
                         <div class="flex gap-4">
                             <span class="bg-conalep w-7 h-7 rounded flex items-center justify-center font-bold shrink-0 text-white text-xs">6</span>
                             <div>
-                                <h5 class="text-sm font-bold mb-4 text-gray-200">¿Cómo se llama el 'espacio virtual' donde se guardan tus mensajes de WhatsApp?</h5>
-                                <div class="space-y-2 text-xs text-gray-400">
+                                <h5 class="text-xs sm:text-sm font-bold mb-4 text-gray-200">¿Cómo se llama el 'espacio virtual' donde se guardan tus mensajes de WhatsApp?</h5>
+                                <div class="space-y-2 text-[10px] sm:text-xs text-gray-400">
                                     <p>a) La Nube o Servidor</p>
                                     <p>b) Una caja fuerte</p>
                                     <p>c) Un satélite</p>
@@ -392,12 +393,12 @@
                         </div>
                     </div>
                     <!-- Pregunta 7 -->
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10">
                         <div class="flex gap-4">
                             <span class="bg-conalep w-7 h-7 rounded flex items-center justify-center font-bold shrink-0 text-white text-xs">7</span>
                             <div>
-                                <h5 class="text-sm font-bold mb-4 text-gray-200">¿Para qué sirve que las tiendas usen un 'Código de Barras' en los productos?</h5>
-                                <div class="space-y-2 text-xs text-gray-400">
+                                <h5 class="text-xs sm:text-sm font-bold mb-4 text-gray-200">¿Para qué sirve que las tiendas usen un 'Código de Barras' en los productos?</h5>
+                                <div class="space-y-2 text-[10px] sm:text-xs text-gray-400">
                                     <p>a) Para que se vean más modernos</p>
                                     <p>b) Para identificar el precio y nombre rápido</p>
                                     <p>c) Para que no se los roben</p>
@@ -406,12 +407,12 @@
                         </div>
                     </div>
                     <!-- Pregunta 8 -->
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10">
                         <div class="flex gap-4">
                             <span class="bg-conalep w-7 h-7 rounded flex items-center justify-center font-bold shrink-0 text-white text-xs">8</span>
                             <div>
-                                <h5 class="text-sm font-bold mb-4 text-gray-200">¿Por qué YouTube o TikTok saben qué videos te gusta ver?</h5>
-                                <div class="space-y-2 text-xs text-gray-400">
+                                <h5 class="text-xs sm:text-sm font-bold mb-4 text-gray-200">¿Por qué YouTube o TikTok saben qué videos te gusta ver?</h5>
+                                <div class="space-y-2 text-[10px] sm:text-xs text-gray-400">
                                     <p>a) Porque adivinan al azar</p>
                                     <p>b) Porque analizan tus datos y gustos</p>
                                     <p>c) Porque un empleado me vigila</p>
@@ -420,12 +421,12 @@
                         </div>
                     </div>
                     <!-- Pregunta 9 -->
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10">
                         <div class="flex gap-4">
                             <span class="bg-conalep w-7 h-7 rounded flex items-center justify-center font-bold shrink-0 text-white text-xs">9</span>
                             <div>
-                                <h5 class="text-sm font-bold mb-4 text-gray-200">¿Cuál es la forma más rápida de buscar una calle en una ciudad desconocida?</h5>
-                                <div class="space-y-2 text-xs text-gray-400">
+                                <h5 class="text-xs sm:text-sm font-bold mb-4 text-gray-200">¿Cuál es la forma más rápida de buscar una calle en una ciudad desconocida?</h5>
+                                <div class="space-y-2 text-[10px] sm:text-xs text-gray-400">
                                     <p>a) Usar un mapa de papel</p>
                                     <p>b) Usar un buscador en un mapa digital (GPS)</p>
                                     <p>c) Manejar hasta encontrarla</p>
@@ -434,12 +435,12 @@
                         </div>
                     </div>
                     <!-- Pregunta 10 -->
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/10">
+                    <div class="bg-white/5 p-5 sm:p-6 rounded-2xl border border-white/10">
                         <div class="flex gap-4">
                             <span class="bg-conalep w-7 h-7 rounded flex items-center justify-center font-bold shrink-0 text-white text-xs">10</span>
                             <div>
-                                <h5 class="text-sm font-bold mb-4 text-gray-200">¿Qué ventaja tiene guardar tus fotos en internet en lugar de imprimirlas todas?</h5>
-                                <div class="space-y-2 text-xs text-gray-400">
+                                <h5 class="text-xs sm:text-sm font-bold mb-4 text-gray-200">¿Qué ventaja tiene guardar tus fotos en internet en lugar de imprimirlas todas?</h5>
+                                <div class="space-y-2 text-[10px] sm:text-xs text-gray-400">
                                     <p>a) No ocupan espacio físico y no se rompen</p>
                                     <p>b) Son más pesadas</p>
                                     <p>c) Solo se pueden ver de día</p>
@@ -449,24 +450,24 @@
                     </div>
                 </div>
 
-                <div class="text-center mt-12 text-gray-500 font-bold uppercase tracking-widest text-[10px]">
+                <div class="text-center mt-10 md:mt-12 text-gray-500 font-bold uppercase tracking-widest text-[8px] sm:text-[10px]">
                     Actividad Diagnóstica Inicial • Ciclo 2025
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-slate-50 py-12 border-t border-gray-200">
+    <footer class="bg-slate-50 py-10 md:py-12 border-t border-gray-200">
         <div class="container mx-auto px-4 text-center">
             <div class="max-w-xl mx-auto space-y-4">
-                <p class="text-slate-900 font-bold uppercase tracking-widest text-sm">Colegio Nacional de Educación Profesional Técnica</p>
-                <p class="text-gray-500 font-medium text-sm">Plantel Chilpancingo 113 • Guerrero, México</p>
+                <p class="text-slate-900 font-bold uppercase tracking-widest text-xs sm:text-sm">Colegio Nacional de Educación Profesional Técnica</p>
+                <p class="text-gray-500 font-medium text-xs sm:text-sm">Plantel Chilpancingo 113 • Guerrero, México</p>
                 <div class="flex justify-center space-x-6 text-gray-400">
                     <i class="fab fa-facebook-f hover:text-conalep transition-colors cursor-pointer"></i>
                     <i class="fab fa-twitter hover:text-conalep transition-colors cursor-pointer"></i>
                     <i class="fab fa-instagram hover:text-conalep transition-colors cursor-pointer"></i>
                 </div>
-                <p class="text-gray-400 text-xs border-t border-gray-200 pt-6 leading-loose">
+                <p class="text-gray-400 text-[10px] sm:text-xs border-t border-gray-200 pt-6 leading-loose">
                     © 2025 CONALEP • Módulo: Construcción de Bases de Datos (COBD-20)
                 </p>
             </div>
