@@ -85,18 +85,33 @@
             font-size: 0.8rem;
             flex-shrink: 0;
         }
+
+        .exercise-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        .exercise-card:hover {
+            border-color: var(--conalep-green);
+            box-shadow: 0 10px 15px -3px rgba(0, 107, 68, 0.1);
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
 
     <!-- Navegación Fija -->
     <nav class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-slate-100">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center text-left">
             <div class="flex items-center space-x-4">
-                <a href="index.html" class="bg-slate-100 p-2 rounded-xl text-conalep hover:bg-conalep hover:text-white transition-all">
-                    <i class="fas fa-chevron-left"></i>
+                <a href="index.html" class="bg-slate-100 p-2.5 rounded-2xl text-conalep hover:bg-conalep transition-all">
+                    <i class="fas fa-arrow-left"></i>
                 </a>
-                <h1 class="font-extrabold text-xl tracking-tight">Recursos <span class="text-conalep">Parcial 1</span></h1>
+                <div>
+                    <h1 class="font-extrabold text-xl tracking-tight text-slate-900">Recursos <span class="text-conalep">Parcial 1</span></h1>
+                    <p class="text-[10px] font-bold text-emerald-600 uppercase tracking-widest leading-none">Módulo COBD-20</p>
+                </div>
             </div>
             <div class="hidden md:flex space-x-2">
                 <a href="#semana1" class="text-[10px] font-black uppercase px-4 py-2 rounded-xl hover:bg-emerald-50 transition-colors">Semana 1</a>
@@ -110,7 +125,7 @@
     <!-- Hero Header -->
     <header class="bg-slate-900 py-24 px-6 relative overflow-hidden text-white border-b-8 border-conalep">
         <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/circuit-board.png')]"></div>
-        <div class="container mx-auto relative z-10">
+        <div class="container mx-auto relative z-10 text-left">
             <div class="flex flex-col md:flex-row items-center justify-between gap-12">
                 <div class="md:w-1/2">
                     <div class="inline-flex items-center space-x-2 mb-4">
@@ -133,7 +148,7 @@
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-20">
+    <main class="container mx-auto px-6 py-20 text-left">
 
         <!-- ACCESO RÁPIDO DINÁMICO -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-32">
@@ -160,266 +175,445 @@
         </div>
 
         <!-- SEMANA 1: ANÁLISIS DE REQUERIMIENTOS -->
-        <section id="semana1" class="mb-40 reveal">
+        <section id="semana1" class="mb-40 reveal text-left">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-                <div class="flex items-center space-x-6">
-                    <div class="bg-conalep text-white w-16 h-16 rounded-[1.5rem] flex items-center justify-center font-black text-2xl shadow-xl shadow-emerald-900/20">01</div>
-                    <div>
-                        <span class="text-conalep font-black text-[10px] uppercase tracking-[0.4em]">Submódulo 1.1</span>
-                        <h3 class="text-4xl font-black text-slate-900 tracking-tighter uppercase">Análisis y Requerimientos</h3>
+                <div class="flex items-center space-x-6 text-left">
+                    <div class="bg-conalep text-white w-16 h-16 rounded-[1.5rem] flex items-center justify-center font-black text-2xl shadow-xl shadow-emerald-900/20 text-left">01</div>
+                    <div class="text-left">
+                        <span class="text-conalep font-black text-[10px] uppercase tracking-[0.4em] text-left">Submódulo 1.1</span>
+                        <h3 class="text-4xl font-black text-slate-900 tracking-tighter uppercase text-left">Análisis y Requerimientos</h3>
                     </div>
                 </div>
-                <div class="bg-slate-100 px-6 py-2 rounded-full text-xs font-black text-slate-500 uppercase tracking-widest">Duración: 7 Horas</div>
+                <div class="bg-slate-100 px-6 py-2 rounded-full text-xs font-black text-slate-500 uppercase tracking-widest text-left">Duración: 7 Horas</div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-20">
-                <div class="space-y-10">
-                    <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100">
-                        <h4 class="text-xl font-black text-slate-900 mb-6 flex items-center italic">
+            <div class="grid lg:grid-cols-2 gap-20 text-left">
+                <div class="space-y-10 text-left">
+                    <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100 text-left">
+                        <h4 class="text-xl font-black text-slate-900 mb-6 flex items-center italic text-left">
                             <i class="fas fa-book-open text-conalep mr-3"></i> Guía Teórica: El Arte de Escuchar
                         </h4>
-                        <p class="text-slate-600 leading-relaxed font-medium mb-6">
+                        <p class="text-slate-600 leading-relaxed font-medium mb-6 text-left">
                             Para construir una base de datos, primero debemos identificar los **Requerimientos Funcionales**. Esto implica entrevistar al usuario final para saber qué "acciones" realizará el sistema.
                         </p>
-                        <div class="space-y-6">
-                            <div class="flex space-x-4">
+                        <div class="space-y-6 text-left">
+                            <div class="flex space-x-4 text-left">
                                 <div class="step-number">1</div>
-                                <p class="text-sm text-slate-500 font-medium"><strong>Identificación de Actores:</strong> ¿Quiénes alimentan los datos? (Vendedores, Alumnos, Administradores).</p>
+                                <p class="text-sm text-slate-500 font-medium text-left"><strong>Identificación de Actores:</strong> ¿Quiénes alimentan los datos? (Vendedores, Alumnos, Administradores).</p>
                             </div>
-                            <div class="flex space-x-4">
+                            <div class="flex space-x-4 text-left">
                                 <div class="step-number">2</div>
-                                <p class="text-sm text-slate-500 font-medium"><strong>Flujo de Información:</strong> ¿Qué datos entran y cuáles deben salir como reportes?</p>
+                                <p class="text-sm text-slate-500 font-medium text-left"><strong>Flujo de Información:</strong> ¿Qué datos entran y cuáles deben salir como reportes?</p>
                             </div>
-                            <div class="flex space-x-4">
+                            <div class="flex space-x-4 text-left">
                                 <div class="step-number">3</div>
-                                <p class="text-sm text-slate-500 font-medium"><strong>Restricciones:</strong> ¿Hay datos que no pueden repetirse? ¿Hay valores obligatorios?</p>
+                                <p class="text-sm text-slate-500 font-medium text-left"><strong>Restricciones:</strong> ¿Hay datos que no pueden repetirse? ¿Hay valores obligatorios?</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="bg-emerald-900 p-10 rounded-[3rem] text-white shadow-2xl relative overflow-hidden">
+                    <div class="bg-emerald-900 p-10 rounded-[3rem] text-white shadow-2xl relative overflow-hidden text-left">
                         <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 -mr-16 -mt-16 rounded-full"></div>
-                        <h4 class="font-black uppercase text-xs tracking-widest text-emerald-400 mb-6 underline">Términos Clave S1</h4>
-                        <dl class="space-y-6">
-                            <div>
-                                <dt class="font-black text-white text-sm uppercase mb-1 tracking-tighter">Entidad (Entity)</dt>
-                                <dd class="text-slate-400 text-xs italic leading-relaxed">"Representa un objeto real o abstracto del cual se recopilan datos. En SQL se convertirá en una TABLA."</dd>
+                        <h4 class="font-black uppercase text-xs tracking-widest text-emerald-400 mb-6 underline text-left">Términos Clave S1</h4>
+                        <dl class="space-y-6 text-left">
+                            <div class="text-left">
+                                <dt class="font-black text-white text-sm uppercase mb-1 tracking-tighter text-left">Entidad (Entity)</dt>
+                                <dd class="text-slate-400 text-xs italic leading-relaxed text-left">"Representa un objeto real o abstracto del cual se recopilan datos. En SQL se convertirá en una TABLA."</dd>
                             </div>
-                            <div>
-                                <dt class="font-black text-white text-sm uppercase mb-1 tracking-tighter">Atributo (Attribute)</dt>
-                                <dd class="text-slate-400 text-xs italic leading-relaxed">"Cada característica de la entidad. En SQL se convertirá en una COLUMNA."</dd>
+                            <div class="text-left">
+                                <dt class="font-black text-white text-sm uppercase mb-1 tracking-tighter text-left">Atributo (Attribute)</dt>
+                                <dd class="text-slate-400 text-xs italic leading-relaxed text-left">"Cada característica de la entidad. En SQL se convertirá en una COLUMNA."</dd>
                             </div>
                         </dl>
                     </div>
                 </div>
-                <div class="relative">
-                    <div class="overflow-hidden rounded-[4rem] shadow-2xl h-full min-h-[500px]">
+                <div class="relative text-left">
+                    <div class="overflow-hidden rounded-[4rem] shadow-2xl h-full min-h-[500px] text-left">
                         <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt="Análisis de requerimientos profesional">
                     </div>
-                    <div class="absolute -bottom-10 -right-10 bg-white p-10 rounded-[3rem] shadow-2xl max-w-sm border border-slate-100">
-                        <div class="flex items-center space-x-3 text-conalep mb-4">
+                    <div class="absolute -bottom-10 -right-10 bg-white p-10 rounded-[3rem] shadow-2xl max-w-sm border border-slate-100 text-left">
+                        <div class="flex items-center space-x-3 text-conalep mb-4 text-left">
                             <i class="fas fa-clipboard-list text-2xl"></i>
-                            <span class="font-black uppercase text-xs tracking-widest">Laboratorio S1</span>
+                            <span class="font-black uppercase text-xs tracking-widest text-left">Laboratorio S1</span>
                         </div>
-                        <p class="text-xs text-slate-600 font-bold leading-relaxed mb-4 italic uppercase">"CASO: GESTIÓN DE UNA VETERINARIA"</p>
-                        <p class="text-[11px] text-slate-500 font-medium leading-loose mb-6">
+                        <p class="text-xs text-slate-600 font-bold leading-relaxed mb-4 italic uppercase text-left">"CASO BASE: GESTIÓN DE UNA VETERINARIA"</p>
+                        <p class="text-[11px] text-slate-500 font-medium leading-loose mb-6 text-left">
                             En tu libreta, identifica 5 entidades clave. Para la entidad **"PACIENTE"**, define 8 atributos técnicos (Ej: peso, raza, fecha_nac).
                         </p>
-                        <span class="text-[10px] font-black text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full uppercase">Ponderación: 1 Firma</span>
+                        <span class="text-[10px] font-black text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full uppercase text-left">Ponderación: 1 Firma</span>
                     </div>
+                </div>
+            </div>
+
+            <!-- NUEVA SECCIÓN DE EJERCICIOS SEMANA 1 -->
+            <div class="mt-20 bg-slate-100 rounded-[3rem] p-10 md:p-16 border border-slate-200 text-left">
+                <div class="text-center mb-16 text-left">
+                    <span class="bg-white px-4 py-1 rounded-full text-conalep font-black text-[10px] uppercase tracking-widest shadow-sm text-left">Práctica de Análisis Inicial</span>
+                    <h4 class="text-3xl font-black text-slate-900 mt-4 tracking-tighter text-left">Banco de Casos: Requerimientos y Entidades</h4>
+                    <p class="text-slate-500 font-medium max-w-2xl mt-2 italic text-sm text-left">"Analiza los siguientes escenarios. Identifica Requerimientos Funcionales (RF), No Funcionales (RNF), Entidades y Atributos."</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 text-left">
+                    <!-- Ejercicio 1.1 -->
+                    <div class="exercise-card text-left">
+                        <div class="flex items-center space-x-3 mb-6 text-left">
+                            <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-white text-left"><i class="fas fa-shopping-cart"></i></div>
+                            <h5 class="font-black text-xs uppercase tracking-tighter text-slate-800 text-left">Caso A: Tienda de Abarrotes "La Chilpeña"</h5>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed mb-6 font-medium text-left">
+                            "El dueño necesita registrar sus productos por código de barras, nombre y marca. Debe saber qué proveedor le surte cada producto y cuánta existencia tiene. Además, quiere que el sistema sea muy fácil de usar para sus empleados."
+                        </p>
+                        <div class="space-y-3 text-left">
+                            <p class="text-[10px] font-black text-conalep uppercase text-left"><i class="fas fa-list-check mr-2"></i>Tarea para el alumno:</p>
+                            <ul class="text-[10px] text-slate-400 space-y-1 font-bold italic text-left">
+                                <li>1. Identifica 2 Requerimientos Funcionales.</li>
+                                <li>2. Identifica 1 Requerimiento No Funcional.</li>
+                                <li>3. Enlista 3 Entidades con 3 atributos cada una.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ejercicio 1.2 -->
+                    <div class="exercise-card text-left">
+                        <div class="flex items-center space-x-3 mb-6 text-left">
+                            <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-white text-left"><i class="fas fa-graduation-cap"></i></div>
+                            <h5 class="font-black text-xs uppercase tracking-tighter text-slate-800 text-left">Caso B: Control Escolar CONALEP</h5>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed mb-6 font-medium text-left">
+                            "Se requiere una base de datos para alumnos. Se debe guardar el nombre, matrícula, CURP y la carrera. El sistema debe permitir generar boletas al final del parcial y solo el personal autorizado puede borrar registros."
+                        </p>
+                        <div class="space-y-3 text-left">
+                            <p class="text-[10px] font-black text-conalep uppercase text-left"><i class="fas fa-list-check mr-2"></i>Tarea para el alumno:</p>
+                            <ul class="text-[10px] text-slate-400 space-y-1 font-bold italic text-left">
+                                <li>1. ¿Cuál es el requerimiento de seguridad (RNF)?</li>
+                                <li>2. Identifica la Entidad principal y sus 4 atributos.</li>
+                                <li>3. ¿Qué reporte debe generar el sistema (RF)?</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ejercicio 1.3 -->
+                    <div class="exercise-card text-left">
+                        <div class="flex items-center space-x-3 mb-6 text-left">
+                            <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-white text-left"><i class="fas fa-dumbbell"></i></div>
+                            <h5 class="font-black text-xs uppercase tracking-tighter text-slate-800 text-left">Caso C: Gimnasio "Power Fit"</h5>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed mb-6 font-medium text-left">
+                            "El gimnasio controla el acceso de sus socios mediante huella digital. Registran el pago de mensualidades y la rutina asignada por su instructor. El sistema debe funcionar las 24 horas sin caídas."
+                        </p>
+                        <div class="space-y-3 text-left">
+                            <p class="text-[10px] font-black text-conalep uppercase text-left"><i class="fas fa-list-check mr-2"></i>Tarea para el alumno:</p>
+                            <ul class="text-[10px] text-slate-400 space-y-1 font-bold italic text-left">
+                                <li>1. Identifica la entidad "Socio" y propón 5 atributos.</li>
+                                <li>2. Identifica la entidad "Instructor" con 3 atributos.</li>
+                                <li>3. Identifica el requerimiento de disponibilidad (RNF).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ejercicio 1.4 -->
+                    <div class="exercise-card text-left">
+                        <div class="flex items-center space-x-3 mb-6 text-left">
+                            <div class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center text-white text-left"><i class="fas fa-pizza-slice"></i></div>
+                            <h5 class="font-black text-xs uppercase tracking-tighter text-slate-800 text-left">Caso D: Pizzería Chilpancingo</h5>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed mb-6 font-medium text-left">
+                            "Se reciben pedidos por teléfono. Se registra el nombre del cliente, dirección y los ingredientes de la pizza. Se asigna un repartidor y se guarda la hora de salida del pedido para medir el tiempo de entrega."
+                        </p>
+                        <div class="space-y-3 text-left">
+                            <p class="text-[10px] font-black text-conalep uppercase text-left"><i class="fas fa-list-check mr-2"></i>Tarea para el alumno:</p>
+                            <ul class="text-[10px] text-slate-400 space-y-1 font-bold italic text-left">
+                                <li>1. Identifica las Entidades: Cliente, Pedido y Repartidor.</li>
+                                <li>2. Enlista 3 atributos para el Repartidor.</li>
+                                <li>3. ¿Cuál es el proceso que se mide (RF)?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 bg-white p-6 rounded-2xl border-l-8 border-conalep text-left shadow-md">
+                    <p class="text-[10px] font-black text-conalep uppercase mb-2 text-left tracking-widest"><i class="fas fa-info-circle mr-2"></i>Sugerencia Pedagógica:</p>
+                    <p class="text-xs text-slate-500 font-medium text-left italic leading-relaxed">
+                        "Pida a los alumnos que intercambien sus libretas al finalizar para co-evaluar si los atributos propuestos son lógicos para el negocio."
+                    </p>
                 </div>
             </div>
         </section>
 
         <!-- SEMANA 2: MODELO ENTIDAD-RELACIÓN -->
-        <section id="semana2" class="mb-40 reveal">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-                <div class="flex items-center space-x-6">
-                    <div class="bg-conalep text-white w-16 h-16 rounded-[1.5rem] flex items-center justify-center font-black text-2xl shadow-xl shadow-emerald-900/20">02</div>
-                    <div>
-                        <span class="text-conalep font-black text-[10px] uppercase tracking-[0.4em]">Submódulo 1.1.2</span>
-                        <h3 class="text-4xl font-black text-slate-900 tracking-tighter uppercase">Modelo Entidad-Relación (E-R)</h3>
+        <section id="semana2" class="mb-40 reveal text-left">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 text-left">
+                <div class="flex items-center space-x-6 text-left">
+                    <div class="bg-conalep text-white w-16 h-16 rounded-[1.5rem] flex items-center justify-center font-black text-2xl shadow-xl shadow-emerald-900/20 text-left">02</div>
+                    <div class="text-left">
+                        <span class="text-conalep font-black text-[10px] uppercase tracking-[0.4em] text-left text-left">Submódulo 1.1.2</span>
+                        <h3 class="text-4xl font-black text-slate-900 tracking-tighter uppercase text-left">Modelo Entidad-Relación (E-R)</h3>
                     </div>
                 </div>
-                <div class="bg-slate-100 px-6 py-2 rounded-full text-xs font-black text-slate-500 uppercase tracking-widest">Duración: 7 Horas</div>
+                <div class="bg-slate-100 px-6 py-2 rounded-full text-xs font-black text-slate-500 uppercase tracking-widest text-left">Duración: 7 Horas</div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-20">
-                <div class="order-2 lg:order-1 bg-white rounded-[4rem] p-12 shadow-sm border border-slate-100">
-                    <h4 class="text-xl font-black text-slate-900 mb-10 text-center uppercase tracking-widest underline decoration-conalep decoration-4 underline-offset-8">Esquema Visual (Diagramación)</h4>
+            <div class="grid lg:grid-cols-2 gap-20 mb-20 text-left">
+                <div class="order-2 lg:order-1 bg-white rounded-[4rem] p-12 shadow-sm border border-slate-100 text-left text-left">
+                    <h4 class="text-xl font-black text-slate-900 mb-10 text-center uppercase tracking-widest underline decoration-conalep decoration-4 underline-offset-8 text-left">Esquema Visual (Diagramación)</h4>
                     
                     <!-- Diagrama CSS Interactivo -->
-                    <div class="flex flex-col items-center space-y-8 py-10 bg-slate-50 rounded-[3rem] border-2 border-dashed border-slate-200">
-                        <div class="flex space-x-4 items-center">
-                            <div class="er-attribute">Matrícula</div>
-                            <div class="er-entity w-40">ALUMNO</div>
-                            <div class="er-attribute">Nombre</div>
+                    <div class="flex flex-col items-center space-y-8 py-10 bg-slate-50 rounded-[3rem] border-2 border-dashed border-slate-200 text-left">
+                        <div class="flex space-x-4 items-center text-left">
+                            <div class="er-attribute text-left">Matrícula</div>
+                            <div class="er-entity w-40 text-left">ALUMNO</div>
+                            <div class="er-attribute text-left">Nombre</div>
                         </div>
                         
-                        <div class="flex flex-col items-center">
-                            <div class="h-10 w-1 bg-slate-300"></div>
-                            <div class="er-relationship">
+                        <div class="flex flex-col items-center text-left">
+                            <div class="h-10 w-1 bg-slate-300 text-left"></div>
+                            <div class="er-relationship text-left">
                                 <span>CURSA</span>
                             </div>
-                            <div class="h-10 w-1 bg-slate-300"></div>
-                            <div class="text-[10px] font-black text-conalep bg-white px-3 py-1 rounded-lg border border-conalep mb-2">Muchos a Muchos (N:M)</div>
+                            <div class="h-10 w-1 bg-slate-300 text-left"></div>
+                            <div class="text-[10px] font-black text-conalep bg-white px-3 py-1 rounded-lg border border-conalep mb-2 text-left text-left">Muchos a Muchos (N:M)</div>
                         </div>
 
-                        <div class="flex space-x-4 items-center">
-                            <div class="er-attribute">ID_Materia</div>
-                            <div class="er-entity w-40">MATERIA</div>
-                            <div class="er-attribute">Créditos</div>
+                        <div class="flex space-x-4 items-center text-left text-left">
+                            <div class="er-attribute text-left">ID_Materia</div>
+                            <div class="er-entity w-40 text-left">MATERIA</div>
+                            <div class="er-attribute text-left">Créditos</div>
                         </div>
                     </div>
-                    <p class="mt-8 text-center text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em]">Ejemplo de Diagramación E-R Profesional</p>
+                    <p class="mt-8 text-center text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em] text-left">Ejemplo de Diagramación E-R Profesional</p>
                 </div>
 
-                <div class="order-1 lg:order-2 space-y-10">
-                    <div class="space-y-6">
-                        <h4 class="text-2xl font-black text-slate-900 leading-tight">La Regla de Oro: <br><span class="text-conalep">Cardinalidad</span></h4>
-                        <p class="text-slate-600 font-medium leading-relaxed">
+                <div class="order-1 lg:order-2 space-y-10 text-left text-left">
+                    <div class="space-y-6 text-left">
+                        <h4 class="text-2xl font-black text-slate-900 leading-tight text-left">La Regla de Oro: <br><span class="text-conalep text-left">Cardinalidad</span></h4>
+                        <p class="text-slate-600 font-medium leading-relaxed text-left text-left">
                             Define cuántas veces una instancia de una entidad se relaciona con otra. Es el paso más crítico del diseño.
                         </p>
-                        <div class="grid gap-6">
-                            <div class="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm flex items-center space-x-6 hover:bg-emerald-50 transition-colors">
-                                <div class="text-3xl font-black text-slate-200">1:1</div>
-                                <div>
-                                    <p class="text-sm font-black text-slate-900 uppercase tracking-tighter">Uno a Uno</p>
-                                    <p class="text-xs text-slate-500 italic">Ejemplo: Un País tiene una sola Capital.</p>
+                        <div class="grid gap-6 text-left">
+                            <div class="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm flex items-center space-x-6 hover:bg-emerald-50 transition-colors text-left">
+                                <div class="text-3xl font-black text-slate-200 text-left">1:1</div>
+                                <div class="text-left">
+                                    <p class="text-sm font-black text-slate-900 uppercase tracking-tighter text-left">Uno a Uno</p>
+                                    <p class="text-xs text-slate-500 italic text-left">Ejemplo: Un País tiene una sola Capital.</p>
                                 </div>
                             </div>
-                            <div class="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm flex items-center space-x-6 hover:bg-emerald-50 transition-colors">
-                                <div class="text-3xl font-black text-slate-200">1:N</div>
-                                <div>
-                                    <p class="text-sm font-black text-slate-900 uppercase tracking-tighter">Uno a Muchos</p>
-                                    <p class="text-xs text-slate-500 italic">Ejemplo: Un Cliente puede tener muchos Pedidos.</p>
+                            <div class="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm flex items-center space-x-6 hover:bg-emerald-50 transition-colors text-left">
+                                <div class="text-3xl font-black text-slate-200 text-left">1:N</div>
+                                <div class="text-left">
+                                    <p class="text-sm font-black text-slate-900 uppercase tracking-tighter text-left">Uno a Muchos</p>
+                                    <p class="text-xs text-slate-500 italic text-left">Ejemplo: Un Cliente puede tener muchos Pedidos.</p>
                                 </div>
                             </div>
-                            <div class="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm flex items-center space-x-6 hover:bg-emerald-50 transition-colors">
-                                <div class="text-3xl font-black text-slate-200">N:M</div>
-                                <div>
-                                    <p class="text-sm font-black text-slate-900 uppercase tracking-tighter">Muchos a Muchos</p>
-                                    <p class="text-xs text-slate-500 italic">Ejemplo: Muchos Libros son escritos por muchos Autores.</p>
+                            <div class="p-6 bg-white rounded-3xl border border-slate-100 shadow-sm flex items-center space-x-6 hover:bg-emerald-50 transition-colors text-left">
+                                <div class="text-3xl font-black text-slate-200 text-left">N:M</div>
+                                <div class="text-left">
+                                    <p class="text-sm font-black text-slate-900 uppercase tracking-tighter text-left text-left">Muchos a Muchos</p>
+                                    <p class="text-xs text-slate-500 italic text-left text-left">Ejemplo: Muchos Libros son escritos por muchos Autores.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="bg-slate-900 p-8 rounded-[2.5rem] text-white shadow-2xl border-b-8 border-conalep">
-                        <h5 class="text-xs font-black uppercase tracking-widest text-emerald-400 mb-4">Paso a Paso S2</h5>
-                        <ol class="space-y-4 text-xs font-medium text-slate-400 leading-relaxed list-decimal pl-4">
-                            <li>Dibuja los rectángulos (Entidades).</li>
-                            <li>Identifica los verbos (Relaciones) en rombos.</li>
-                            <li>Añade los círculos (Atributos) conectando con líneas.</li>
-                            <li>Anota los números de cardinalidad (1, N, M).</li>
+                    <div class="bg-slate-900 p-8 rounded-[2.5rem] text-white shadow-2xl border-b-8 border-conalep text-left">
+                        <h5 class="text-xs font-black uppercase tracking-widest text-emerald-400 mb-4 text-left text-left">Paso a Paso S2</h5>
+                        <ol class="space-y-4 text-xs font-medium text-slate-400 leading-relaxed list-decimal pl-4 text-left">
+                            <li class="text-left">Dibuja los rectángulos (Entidades).</li>
+                            <li class="text-left">Identifica los verbos (Relaciones) en rombos.</li>
+                            <li class="text-left">Añade los círculos (Atributos) conectando con líneas.</li>
+                            <li class="text-left">Anota los números de cardinalidad (1, N, M).</li>
                         </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECCIÓN DE EJERCICIOS SEMANA 2 -->
+            <div class="bg-emerald-50 rounded-[3rem] p-10 md:p-16 border border-emerald-100 text-left">
+                <div class="text-center mb-16 text-left">
+                    <span class="bg-white px-4 py-1 rounded-full text-conalep font-black text-[10px] uppercase tracking-widest shadow-sm text-left">Práctica de Reforzamiento</span>
+                    <h4 class="text-3xl font-black text-slate-900 mt-4 tracking-tighter text-left">Laboratorio de Diseño E-R</h4>
+                    <p class="text-slate-500 font-medium max-w-2xl mx-auto mt-2 italic text-sm text-left text-left">"Copia cada caso en tu libreta y realiza el análisis completo (Entidades, Atributos y Diagrama E-R)."</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 text-left">
+                    <!-- Ejercicio 1 -->
+                    <div class="exercise-card text-left">
+                        <div class="flex items-center space-x-3 mb-6 text-left">
+                            <div class="w-10 h-10 bg-conalep rounded-xl flex items-center justify-center text-white text-left"><i class="fas fa-hospital"></i></div>
+                            <h5 class="font-black text-xs uppercase tracking-tighter text-slate-800 text-left text-left">Caso 1: Hospital</h5>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed mb-6 font-medium text-left">
+                            "Un Hospital desea llevar el control de sus **Pacientes** y sus **Citas Médicas**. Cada paciente tiene un nombre, RFC y edad. Los **Médicos** tienen una especialidad y cédula profesional."
+                        </p>
+                        <div class="space-y-3 text-left">
+                            <p class="text-[10px] font-black text-conalep uppercase text-left"><i class="fas fa-tasks mr-2"></i>Instrucciones:</p>
+                            <ul class="text-[10px] text-slate-400 space-y-1 font-bold italic text-left">
+                                <li>- Identifica 3 Entidades principales.</li>
+                                <li>- Define 5 atributos para el Médico.</li>
+                                <li>- Define la cardinalidad Paciente-Cita.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ejercicio 2 -->
+                    <div class="exercise-card text-left text-left">
+                        <div class="flex items-center space-x-3 mb-6 text-left">
+                            <div class="w-10 h-10 bg-conalep rounded-xl flex items-center justify-center text-white text-left"><i class="fas fa-car"></i></div>
+                            <h5 class="font-black text-xs uppercase tracking-tighter text-slate-800 text-left">Caso 2: Concesionaria</h5>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed mb-6 font-medium text-left">
+                            "Una agencia vende **Autos** de diferentes marcas y modelos. Cada auto es vendido por un **Vendedor** a un **Cliente** específico. Se requiere guardar la fecha de venta y el precio final."
+                        </p>
+                        <div class="space-y-3 text-left">
+                            <p class="text-[10px] font-black text-conalep uppercase text-left"><i class="fas fa-tasks mr-2"></i>Instrucciones:</p>
+                            <ul class="text-[10px] text-slate-400 space-y-1 font-bold italic text-left text-left">
+                                <li>- Define los atributos del Auto.</li>
+                                <li>- ¿Qué dato sería la Llave Primaria?</li>
+                                <li>- Dibuja el diagrama de la relación.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Ejercicio 3 -->
+                    <div class="exercise-card text-left">
+                        <div class="flex items-center space-x-3 mb-6 text-left text-left text-left">
+                            <div class="w-10 h-10 bg-conalep rounded-xl flex items-center justify-center text-white text-left"><i class="fas fa-film"></i></div>
+                            <h5 class="font-black text-xs uppercase tracking-tighter text-slate-800 text-left">Caso 3: Cine Chilpo</h5>
+                        </div>
+                        <p class="text-xs text-slate-500 leading-relaxed mb-6 font-medium text-left">
+                            "El cine necesita organizar sus **Películas** y las **Salas** donde se proyectan. Una película puede estar en varias salas en diferentes horarios. Una sala proyecta varias películas al día."
+                        </p>
+                        <div class="space-y-3 text-left">
+                            <p class="text-[10px] font-black text-conalep uppercase text-left text-left"><i class="fas fa-tasks mr-2"></i>Instrucciones:</p>
+                            <ul class="text-[10px] text-slate-400 space-y-1 font-bold italic text-left">
+                                <li>- ¿Es una relación 1:N o N:M?</li>
+                                <li>- Enlista 4 atributos para Película.</li>
+                                <li>- ¿Qué datos necesita la Sala?</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 p-8 bg-white rounded-3xl border-2 border-emerald-500 shadow-xl relative group text-left">
+                    <div class="absolute top-0 right-10 bg-emerald-500 text-white px-4 py-1 rounded-b-xl text-[9px] font-black uppercase tracking-widest shadow-md text-left">Proyecto Integrador</div>
+                    <div class="flex flex-col md:flex-row items-center gap-8 text-left">
+                        <div class="md:w-3/4 text-left">
+                            <h5 class="text-xl font-black text-slate-900 mb-4 uppercase tracking-tighter italic text-left text-left">Ejercicio de Campo: Aplicación Real</h5>
+                            <p class="text-sm text-slate-500 font-medium leading-relaxed text-left">
+                                "Elige un negocio de tu comunidad (Papelería, Carnicería, Tienda de Ropa). Visítalo y realiza una entrevista breve. En tu libreta, genera el **Diagrama E-R Inicial** que represente cómo funciona su inventario o sus ventas."
+                            </p>
+                        </div>
+                        <div class="md:w-1/4 text-center text-left">
+                            <div class="text-4xl text-emerald-500 mb-2 text-left"><i class="fas fa-id-badge text-left"></i></div>
+                            <p class="text-[10px] font-black text-slate-400 uppercase text-left text-left text-left">Valor de Actividad</p>
+                            <p class="text-lg font-black text-conalep text-left text-left">2 Firmas</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- SEMANA 3: NORMALIZACIÓN -->
-        <section id="semana3" class="mb-40 reveal">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-                <div class="flex items-center space-x-6">
-                    <div class="bg-conalep text-white w-16 h-16 rounded-[1.5rem] flex items-center justify-center font-black text-2xl shadow-xl shadow-emerald-900/20">03</div>
-                    <div>
-                        <span class="text-conalep font-black text-[10px] uppercase tracking-[0.4em]">Submódulo 1.2.2</span>
-                        <h3 class="text-4xl font-black text-slate-900 tracking-tighter uppercase">Estructura Lógica y Normalización</h3>
+        <section id="semana3" class="mb-40 reveal text-left">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 text-left text-left">
+                <div class="flex items-center space-x-6 text-left">
+                    <div class="bg-conalep text-white w-16 h-16 rounded-[1.5rem] flex items-center justify-center font-black text-2xl shadow-xl shadow-emerald-900/20 text-left">03</div>
+                    <div class="text-left text-left">
+                        <span class="text-conalep font-black text-[10px] uppercase tracking-[0.4em] text-left text-left">Submódulo 1.2.2</span>
+                        <h3 class="text-4xl font-black text-slate-900 tracking-tighter uppercase text-left">Estructura Lógica y Normalización</h3>
                     </div>
                 </div>
-                <div class="bg-slate-100 px-6 py-2 rounded-full text-xs font-black text-slate-500 uppercase tracking-widest">Duración: 7 Horas</div>
+                <div class="bg-slate-100 px-6 py-2 rounded-full text-xs font-black text-slate-500 uppercase tracking-widest text-left">Duración: 7 Horas</div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-20">
-                <div class="space-y-10">
-                    <div class="prose max-w-none">
-                        <h4 class="text-2xl font-black text-slate-900 leading-tight mb-6">¿Por qué Normalizar? <br><span class="text-slate-400 font-medium">Eliminando Anomalías</span></h4>
-                        <p class="text-slate-600 font-medium leading-relaxed mb-8">
+            <div class="grid lg:grid-cols-2 gap-20 text-left">
+                <div class="space-y-10 text-left">
+                    <div class="prose max-w-none text-left">
+                        <h4 class="text-2xl font-black text-slate-900 leading-tight mb-6 text-left text-left text-left text-left">¿Por qué Normalizar? <br><span class="text-slate-400 font-medium text-left">Eliminando Anomalías</span></h4>
+                        <p class="text-slate-600 font-medium leading-relaxed mb-8 text-left text-left">
                             La normalización es un proceso sistemático para evitar la duplicidad de datos y garantizar que cada dato se guarde **exactamente en un solo lugar**.
                         </p>
                     </div>
                     
-                    <div class="space-y-4">
-                        <div class="bg-white p-8 rounded-[2.5rem] border-2 border-emerald-500 shadow-xl relative">
-                            <div class="absolute -top-4 -left-4 bg-emerald-500 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase">Fase 1</div>
-                            <h5 class="font-black text-slate-900 text-sm uppercase mb-2">1FN: Atomicidad</h5>
-                            <p class="text-xs text-slate-500 leading-relaxed font-medium italic">"Prohibido tener múltiples valores en una celda o columnas repetitivas."</p>
-                            <div class="mt-4 bg-red-50 p-4 rounded-xl border border-red-100 text-[10px] font-mono text-red-800">
-                                INCORRECTO: [Teléfonos: 747123, 747456] <i class="fas fa-times ml-2"></i>
+                    <div class="space-y-4 text-left text-left text-left text-left text-left">
+                        <div class="bg-white p-8 rounded-[2.5rem] border-2 border-emerald-500 shadow-xl relative text-left">
+                            <div class="absolute -top-4 -left-4 bg-emerald-500 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase text-left text-left">Fase 1</div>
+                            <h5 class="font-black text-slate-900 text-sm uppercase mb-2 text-left">1FN: Atomicidad</h5>
+                            <p class="text-xs text-slate-500 leading-relaxed font-medium italic text-left">"Prohibido tener múltiples valores en una celda o columnas repetitivas."</p>
+                            <div class="mt-4 bg-red-50 p-4 rounded-xl border border-red-100 text-[10px] font-mono text-red-800 text-left">
+                                INCORRECTO: [Teléfonos: 747123, 747456] <i class="fas fa-times ml-2 text-left"></i>
                             </div>
                         </div>
-                        <div class="bg-white p-8 rounded-[2.5rem] border-2 border-emerald-500 shadow-xl relative">
-                            <div class="absolute -top-4 -left-4 bg-emerald-500 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase">Fase 2</div>
-                            <h5 class="font-black text-slate-900 text-sm uppercase mb-2">2FN: Dependencia Funcional</h5>
-                            <p class="text-xs text-slate-500 leading-relaxed font-medium italic">"Todos los datos deben depender al 100% de la Llave Primaria."</p>
+                        <div class="bg-white p-8 rounded-[2.5rem] border-2 border-emerald-500 shadow-xl relative text-left">
+                            <div class="absolute -top-4 -left-4 bg-emerald-500 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase text-left text-left">Fase 2</div>
+                            <h5 class="font-black text-slate-900 text-sm uppercase mb-2 text-left">2FN: Dependencia Funcional</h5>
+                            <p class="text-xs text-slate-500 leading-relaxed font-medium italic text-left">"Todos los datos deben depender al 100% de la Llave Primaria."</p>
                         </div>
-                        <div class="bg-white p-8 rounded-[2.5rem] border-2 border-emerald-500 shadow-xl relative">
-                            <div class="absolute -top-4 -left-4 bg-emerald-500 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase">Fase 3</div>
-                            <h5 class="font-black text-slate-900 text-sm uppercase mb-2">3FN: No Transitividad</h5>
-                            <p class="text-xs text-slate-500 leading-relaxed font-medium italic">"No puede haber columnas que dependan de otras columnas que no sean llaves."</p>
+                        <div class="bg-white p-8 rounded-[2.5rem] border-2 border-emerald-500 shadow-xl relative text-left">
+                            <div class="absolute -top-4 -left-4 bg-emerald-500 text-white px-4 py-1 rounded-full text-[10px] font-black uppercase text-left text-left">Fase 3</div>
+                            <h5 class="font-black text-slate-900 text-sm uppercase mb-2 text-left">3FN: No Transitividad</h5>
+                            <p class="text-xs text-slate-500 leading-relaxed font-medium italic text-left">"No puede haber columnas que dependan de otras columnas que no sean llaves."</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-slate-900 rounded-[4rem] p-12 shadow-2xl relative overflow-hidden flex flex-col justify-center">
-                    <h4 class="text-emerald-400 font-black text-center text-xs uppercase tracking-widest mb-10 underline underline-offset-4">Ejemplo Paso a Paso: El Caso de la Venta</h4>
+                <div class="bg-slate-900 rounded-[4rem] p-12 shadow-2xl relative overflow-hidden flex flex-col justify-center text-center text-left">
+                    <h4 class="text-emerald-400 font-black text-center text-xs uppercase tracking-widest mb-10 underline underline-offset-4 text-left">Ejemplo Paso a Paso: El Caso de la Venta</h4>
                     
-                    <div class="space-y-6">
-                        <div class="bg-white/5 p-6 rounded-3xl border border-white/10">
-                            <p class="text-white text-xs font-bold mb-3 uppercase tracking-tighter">Tabla Sucia (Sin Normalizar)</p>
-                            <table class="w-full text-[9px] text-slate-400 border-collapse">
-                                <tr class="bg-white/10 text-white uppercase"><th class="p-2 border border-white/10">Venta</th><th class="p-2 border border-white/10">Cliente</th><th class="p-2 border border-white/10">Productos</th></tr>
-                                <tr><td class="p-2 border border-white/10 text-center">V-01</td><td class="p-2 border border-white/10">Juan Pérez</td><td class="p-2 border border-white/10 text-emerald-400">Coca, Papas, Pan (Error 1FN)</td></tr>
+                    <div class="space-y-6 text-left">
+                        <div class="bg-white/5 p-6 rounded-3xl border border-white/10 text-left">
+                            <p class="text-white text-xs font-bold mb-3 uppercase tracking-tighter text-left">Tabla Sucia (Sin Normalizar)</p>
+                            <table class="w-full text-[9px] text-slate-400 border-collapse text-left">
+                                <tr class="bg-white/10 text-white uppercase text-center text-left"><th class="p-2 border border-white/10 text-left">Venta</th><th class="p-2 border border-white/10 text-left">Cliente</th><th class="p-2 border border-white/10 text-left text-left">Productos</th></tr>
+                                <tr><td class="p-2 border border-white/10 text-center text-left">V-01</td><td class="p-2 border border-white/10 text-left text-left">Juan Pérez</td><td class="p-2 border border-white/10 text-emerald-400 text-left text-left">Coca, Papas, Pan (Error 1FN)</td></tr>
                             </table>
                         </div>
-                        <div class="flex justify-center py-4"><i class="fas fa-arrow-down text-emerald-500 text-3xl animate-bounce"></i></div>
-                        <div class="bg-emerald-500/10 p-6 rounded-3xl border border-emerald-500/30">
-                            <p class="text-emerald-400 text-xs font-bold mb-3 uppercase tracking-tighter">Tabla Limpia (Normalizada)</p>
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="bg-white/10 p-3 rounded-xl border border-white/10 text-[9px]">
-                                    <p class="text-white font-black mb-1">CLIENTES</p>
-                                    <p>id_cli | nom_cli</p>
+                        <div class="flex justify-center py-4 text-left"><i class="fas fa-arrow-down text-emerald-500 text-3xl animate-bounce text-left"></i></div>
+                        <div class="bg-emerald-500/10 p-6 rounded-3xl border border-emerald-500/30 text-left">
+                            <p class="text-emerald-400 text-xs font-bold mb-3 uppercase tracking-tighter text-left">Tabla Limpia (Normalizada)</p>
+                            <div class="grid grid-cols-2 gap-4 text-left">
+                                <div class="bg-white/10 p-3 rounded-xl border border-white/10 text-[9px] text-left">
+                                    <p class="text-white font-black mb-1 text-left">CLIENTES</p>
+                                    <p class="text-left text-left text-left text-left">id_cli | nom_cli</p>
                                 </div>
-                                <div class="bg-white/10 p-3 rounded-xl border border-white/10 text-[9px]">
-                                    <p class="text-white font-black mb-1">DETALLE_VENTA</p>
-                                    <p>id_vta | id_prod | cant</p>
+                                <div class="bg-white/10 p-3 rounded-xl border border-white/10 text-[9px] text-left">
+                                    <p class="text-white font-black mb-1 text-left">DETALLE_VENTA</p>
+                                    <p class="text-left text-left text-left">id_vta | id_prod | cant</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-10 p-6 bg-white/5 rounded-3xl border border-dashed border-white/20">
-                        <h5 class="text-xs font-black text-white uppercase mb-2">Práctica Semanal S3</h5>
-                        <p class="text-[11px] text-slate-400 font-medium italic">Trae un ticket de OXXO. En tu libreta, redibuja los datos separándolos en 3 tablas diferentes aplicando la 3FN.</p>
+                    <div class="mt-10 p-6 bg-white/5 rounded-3xl border border-dashed border-white/20 text-left text-left">
+                        <h5 class="text-xs font-black text-white uppercase mb-2 text-left">Práctica Semanal S3</h5>
+                        <p class="text-[11px] text-slate-400 font-medium italic text-left text-left text-left">Trae un ticket de OXXO. En tu libreta, redibuja los datos separándolos en 3 tablas diferentes aplicando la 3FN.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- SEMANA 4: DISEÑO FÍSICO Y SQL -->
-        <section id="semana4" class="mb-40 reveal">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
-                <div class="flex items-center space-x-6">
-                    <div class="bg-conalep text-white w-16 h-16 rounded-[1.5rem] flex items-center justify-center font-black text-2xl shadow-xl shadow-emerald-900/20">04</div>
-                    <div>
-                        <span class="text-conalep font-black text-[10px] uppercase tracking-[0.4em]">Submódulo 1.3</span>
-                        <h3 class="text-4xl font-black text-slate-900 tracking-tighter uppercase">Diseño Físico y Lenguaje SQL</h3>
+        <section id="semana4" class="mb-40 reveal text-left">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 text-left">
+                <div class="flex items-center space-x-6 text-left">
+                    <div class="bg-conalep text-white w-16 h-16 rounded-[1.5rem] flex items-center justify-center font-black text-2xl shadow-xl shadow-emerald-900/20 text-left">04</div>
+                    <div class="text-left">
+                        <span class="text-conalep font-black text-[10px] uppercase tracking-[0.4em] text-left">Submódulo 1.3</span>
+                        <h3 class="text-4xl font-black text-slate-900 tracking-tighter uppercase text-left">Diseño Físico y Lenguaje SQL</h3>
                     </div>
                 </div>
-                <div class="bg-slate-100 px-6 py-2 rounded-full text-xs font-black text-slate-500 uppercase tracking-widest">Duración: 7 Horas</div>
+                <div class="bg-slate-100 px-6 py-2 rounded-full text-xs font-black text-slate-500 uppercase tracking-widest text-left">Duración: 7 Horas</div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-20">
-                <div class="order-2 lg:order-1 space-y-10">
-                    <div class="code-window">
-                        <div class="flex justify-between items-center mb-6">
-                            <div class="flex space-x-2">
-                                <div class="w-3 h-3 bg-red-500 rounded-full shadow-lg"></div>
-                                <div class="w-3 h-3 bg-yellow-500 rounded-full shadow-lg"></div>
-                                <div class="w-3 h-3 bg-green-500 rounded-full shadow-lg"></div>
+            <div class="grid lg:grid-cols-2 gap-20 text-left">
+                <div class="order-2 lg:order-1 space-y-10 text-left">
+                    <div class="code-window text-left">
+                        <div class="flex justify-between items-center mb-6 text-left">
+                            <div class="flex space-x-2 text-left text-left">
+                                <div class="w-3 h-3 bg-red-500 rounded-full shadow-lg text-left"></div>
+                                <div class="w-3 h-3 bg-yellow-500 rounded-full shadow-lg text-left"></div>
+                                <div class="w-3 h-3 bg-green-500 rounded-full shadow-lg text-left"></div>
                             </div>
-                            <span class="text-[9px] font-black text-slate-500 uppercase tracking-widest">MySQL / MariaDB</span>
+                            <span class="text-[9px] font-black text-slate-500 uppercase tracking-widest text-right text-left text-left">MySQL / MariaDB</span>
                         </div>
-                        <pre class="text-[11px] sm:text-[13px] leading-relaxed">
+                        <pre class="text-[11px] sm:text-[13px] leading-relaxed text-left text-left">
 <span class="text-slate-500">-- 1. CREACIÓN DE LA ESTRUCTURA</span>
 <span class="text-pink-500">CREATE TABLE</span> Alumnos (
     id_alumno  <span class="text-yellow-400">INT</span> <span class="text-pink-500">PRIMARY KEY</span>,
@@ -433,54 +627,54 @@
 <span class="text-pink-500">ALTER TABLE</span> Alumnos <span class="text-pink-500">ADD</span> correo <span class="text-yellow-400">VARCHAR</span>(50);</pre>
                     </div>
                     
-                    <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100">
-                        <h4 class="text-sm font-black text-slate-900 mb-6 uppercase tracking-widest flex items-center">
-                            <i class="fas fa-terminal text-conalep mr-3"></i> Sintaxis Explicada (DDL)
+                    <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100 text-left text-left text-left">
+                        <h4 class="text-sm font-black text-slate-900 mb-6 uppercase tracking-widest flex items-center text-left">
+                            <i class="fas fa-terminal text-conalep mr-3 text-left"></i> Sintaxis Explicada (DDL)
                         </h4>
-                        <div class="space-y-6">
-                            <div class="flex items-start border-b border-slate-50 pb-4">
-                                <span class="bg-slate-100 p-2 rounded-lg text-[10px] font-black text-slate-900 mr-4">INT</span>
-                                <p class="text-xs text-slate-500 leading-relaxed font-medium">Números enteros (Matrículas, cantidades, IDs).</p>
+                        <div class="space-y-6 text-left">
+                            <div class="flex items-start border-b border-slate-50 pb-4 text-left text-left text-left">
+                                <span class="bg-slate-100 p-2 rounded-lg text-[10px] font-black text-slate-900 mr-4 text-left">INT</span>
+                                <p class="text-xs text-slate-500 leading-relaxed font-medium text-left">Números enteros (Matrículas, cantidades, IDs).</p>
                             </div>
-                            <div class="flex items-start border-b border-slate-50 pb-4">
-                                <span class="bg-slate-100 p-2 rounded-lg text-[10px] font-black text-slate-900 mr-4">VARCHAR(N)</span>
-                                <p class="text-xs text-slate-500 leading-relaxed font-medium">Cadenas de texto variables con un límite máximo (N).</p>
+                            <div class="flex items-start border-b border-slate-50 pb-4 text-left text-left">
+                                <span class="bg-slate-100 p-2 rounded-lg text-[10px] font-black text-slate-900 mr-4 whitespace-nowrap text-left text-left">VARCHAR(N)</span>
+                                <p class="text-xs text-slate-500 leading-relaxed font-medium text-left">Cadenas de texto variables con un límite máximo (N).</p>
                             </div>
-                            <div class="flex items-start">
-                                <span class="bg-emerald-100 p-2 rounded-lg text-[10px] font-black text-emerald-700 mr-4">NOT NULL</span>
-                                <p class="text-xs text-slate-500 leading-relaxed font-medium italic">Restricción que obliga a que el campo nunca quede vacío.</p>
+                            <div class="flex items-start text-left text-left">
+                                <span class="bg-emerald-100 p-2 rounded-lg text-[10px] font-black text-emerald-700 mr-4 whitespace-nowrap text-left">NOT NULL</span>
+                                <p class="text-xs text-slate-500 leading-relaxed font-medium italic text-left">Restricción que obliga a que el campo nunca quede vacío.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="order-1 lg:order-2 space-y-12">
-                    <div class="prose max-w-none">
-                        <h4 class="text-3xl font-black text-slate-900 tracking-tighter uppercase mb-6 leading-tight">Del Diagrama <br>al <span class="text-conalep">Código Final</span></h4>
-                        <p class="text-slate-600 font-medium leading-relaxed italic border-l-4 border-conalep pl-6 py-4 bg-white rounded-r-3xl">
+                <div class="order-1 lg:order-2 space-y-12 text-left">
+                    <div class="prose max-w-none text-left">
+                        <h4 class="text-3xl font-black text-slate-900 tracking-tighter uppercase mb-6 leading-tight text-left text-left text-left">Del Diagrama <br>al <span class="text-conalep text-left text-left">Código Final</span></h4>
+                        <p class="text-slate-600 font-medium leading-relaxed italic border-l-4 border-conalep pl-6 py-4 bg-white rounded-r-3xl text-left text-left">
                             En esta semana aprenderás a usar el Lenguaje de Definición de Datos (**DDL**). Es el momento donde el diseño conceptual se vuelve una realidad funcional en el servidor.
                         </p>
                     </div>
 
-                    <div class="grid grid-cols-1 gap-6">
-                        <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-xl transition-shadow border-t-8 border-slate-900">
-                            <span class="text-conalep font-black text-[10px] uppercase block mb-4">Comando 1.3.1</span>
-                            <h5 class="text-lg font-black text-slate-900 mb-2 uppercase">CREATE TABLE</h5>
-                            <p class="text-sm text-slate-500 font-medium leading-relaxed">Crea la estructura física de la tabla, definiendo nombres de campos, tipos de datos y llaves.</p>
+                    <div class="grid grid-cols-1 gap-6 text-left">
+                        <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-xl transition-shadow border-t-8 border-slate-900 text-left text-left">
+                            <span class="text-conalep font-black text-[10px] uppercase block mb-4 text-left">Comando 1.3.1</span>
+                            <h5 class="text-lg font-black text-slate-900 mb-2 uppercase text-left text-left">CREATE TABLE</h5>
+                            <p class="text-sm text-slate-500 font-medium leading-relaxed text-left text-left text-left">Crea la estructura física de la tabla, definiendo nombres de campos, tipos de datos y llaves.</p>
                         </div>
-                        <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-xl transition-shadow border-t-8 border-slate-900">
-                            <span class="text-conalep font-black text-[10px] uppercase block mb-4">Comando 1.3.2</span>
-                            <h5 class="text-lg font-black text-slate-900 mb-2 uppercase">ALTER & DROP</h5>
-                            <p class="text-sm text-slate-500 font-medium leading-relaxed">Permiten evolucionar la base de datos (añadir columnas, borrar tablas viejas).</p>
+                        <div class="bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 hover:shadow-xl transition-shadow border-t-8 border-slate-900 text-left text-left text-left">
+                            <span class="text-conalep font-black text-[10px] uppercase block mb-4 text-left">Comando 1.3.2</span>
+                            <h5 class="text-lg font-black text-slate-900 mb-2 uppercase text-left text-left text-left">ALTER & DROP</h5>
+                            <p class="text-sm text-slate-500 font-medium leading-relaxed text-left text-left">Permiten evolucionar la base de datos (añadir columnas, borrar tablas viejas).</p>
                         </div>
                     </div>
 
-                    <div class="bg-conalep p-10 rounded-[3rem] text-white shadow-2xl transform hover:scale-105 transition-transform duration-500 cursor-help">
-                        <h5 class="text-xs font-black uppercase mb-3 flex items-center">
-                            <i class="fas fa-medal mr-2 text-gold"></i> Evaluación Final Parcial 1
+                    <div class="bg-conalep p-10 rounded-[3rem] text-white shadow-2xl transform hover:scale-105 transition-transform duration-500 cursor-help text-left text-left text-left">
+                        <h5 class="text-xs font-black uppercase mb-3 flex items-center text-left text-left">
+                            <i class="fas fa-medal mr-2 text-gold text-left"></i> Evaluación Final Parcial 1
                         </h5>
-                        <p class="text-sm font-bold mb-4">ENTREGABLE: SCRIPT SQL PROFESIONAL</p>
-                        <p class="text-xs leading-relaxed text-emerald-100 font-medium italic">
+                        <p class="text-sm font-bold mb-4 text-left text-left text-left">ENTREGABLE: SCRIPT SQL PROFESIONAL</p>
+                        <p class="text-xs leading-relaxed text-emerald-100 font-medium italic text-left text-left text-left">
                             Deberás entregar un archivo `.sql` que contenga al menos 5 tablas interconectadas con llaves foráneas para tu proyecto integrador. ¡Asegúrate de que compile sin errores!
                         </p>
                     </div>
@@ -489,26 +683,26 @@
         </section>
 
         <!-- Final del Parcial -->
-        <div class="text-center py-20 reveal">
-            <div class="inline-block p-16 bg-white rounded-[5rem] shadow-2xl border border-slate-50 max-w-4xl relative overflow-hidden group">
-                <div class="absolute -top-20 -right-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px]"></div>
-                <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px]"></div>
+        <div class="text-center py-20 reveal text-left">
+            <div class="inline-block p-16 bg-white rounded-[5rem] shadow-2xl border border-slate-50 max-w-4xl relative overflow-hidden group text-left">
+                <div class="absolute -top-20 -right-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] text-left"></div>
+                <div class="absolute -bottom-20 -left-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] text-left"></div>
                 
-                <div class="relative z-10">
-                    <div class="text-conalep text-6xl mb-8 group-hover:scale-125 transition-transform duration-700">
-                        <i class="fas fa-database"></i>
+                <div class="relative z-10 text-left text-left">
+                    <div class="text-conalep text-6xl mb-8 group-hover:scale-125 transition-transform duration-700 text-left text-left">
+                        <i class="fas fa-database text-left text-left text-left"></i>
                     </div>
-                    <h4 class="text-4xl font-black mb-6 text-slate-900 tracking-tighter">Has Concluido los Cimientos</h4>
-                    <p class="text-slate-500 text-lg font-medium mb-12 leading-relaxed max-w-2xl mx-auto italic">
+                    <h4 class="text-4xl font-black mb-6 text-slate-900 tracking-tighter text-left text-left text-left">Has Concluido los Cimientos</h4>
+                    <p class="text-slate-500 text-lg font-medium mb-12 leading-relaxed max-w-2xl mx-auto italic text-left text-left text-left">
                         "Un buen diseño inicial ahorra meses de trabajo en el futuro. Ahora que sabes diseñar la estructura, el Parcial 2 te enseñará a darle vida con consultas de datos."
                     </p>
-                    <div class="flex flex-col sm:flex-row justify-center gap-6">
-                        <a href="index.html" class="inline-flex items-center justify-center space-x-4 bg-slate-900 text-white px-12 py-5 rounded-[2rem] font-black hover:bg-black transition-all shadow-xl hover:shadow-2xl text-xs uppercase tracking-widest">
-                            <i class="fas fa-home"></i>
+                    <div class="flex flex-col sm:flex-row justify-center gap-6 text-left">
+                        <a href="index.html" class="inline-flex items-center justify-center space-x-4 bg-slate-900 text-white px-12 py-5 rounded-[2rem] font-black hover:bg-black transition-all shadow-xl hover:shadow-2xl text-xs uppercase tracking-widest text-left">
+                            <i class="fas fa-home text-left"></i>
                             <span>Menú Principal</span>
                         </a>
-                        <button onclick="window.scrollTo(0,0)" class="inline-flex items-center justify-center space-x-4 bg-conalep text-white px-12 py-5 rounded-[2rem] font-black hover:opacity-90 transition-all shadow-xl hover:shadow-2xl text-xs uppercase tracking-widest border-b-4 border-emerald-900">
-                            <i class="fas fa-chevron-up"></i>
+                        <button onclick="window.scrollTo(0,0)" class="inline-flex items-center justify-center space-x-4 bg-conalep text-white px-12 py-5 rounded-[2rem] font-black hover:opacity-90 transition-all shadow-xl hover:shadow-2xl text-xs uppercase tracking-widest border-b-4 border-emerald-900 text-left">
+                            <i class="fas fa-chevron-up text-left"></i>
                             <span>Regresar Arriba</span>
                         </button>
                     </div>
@@ -520,15 +714,15 @@
 
     <!-- Footer Institucional Limpio -->
     <footer class="bg-slate-900 py-20 text-center border-t-[12px] border-conalep">
-        <div class="container mx-auto px-6">
-            <div class="max-w-xl mx-auto space-y-4">
-                <p class="text-emerald-500 font-black uppercase tracking-[0.6em] text-xs">CONALEP Plantel 113</p>
-                <p class="text-slate-500 text-[11px] font-bold tracking-widest uppercase opacity-70">
+        <div class="container mx-auto px-6 text-left">
+            <div class="max-w-xl mx-auto space-y-4 text-left text-left">
+                <p class="text-emerald-500 font-black uppercase tracking-[0.6em] text-xs text-left text-left">CONALEP Plantel 113</p>
+                <p class="text-slate-500 text-[11px] font-bold tracking-widest uppercase opacity-70 text-left text-left">
                     Chilpancingo de los Bravo, Guerrero <br>
                     Formación Profesional en Informática • COBD-20
                 </p>
-                <div class="h-px w-20 bg-slate-800 mx-auto mt-8"></div>
-                <p class="text-slate-600 text-[9px] font-bold uppercase tracking-widest pt-4">© Colegio Nacional de Educación Profesional Técnica</p>
+                <div class="h-px w-20 bg-slate-800 mx-auto mt-8 text-left"></div>
+                <p class="text-slate-600 text-[9px] font-bold uppercase tracking-widest pt-4 text-left text-left text-left">© Colegio Nacional de Educación Profesional Técnica</p>
             </div>
         </div>
     </footer>
