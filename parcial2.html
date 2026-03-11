@@ -64,6 +64,27 @@
             font-family: 'Fira Code', monospace;
         }
 
+        .theory-card {
+            background: white;
+            border-radius: 2rem;
+            padding: 2.5rem;
+            border: 1px solid #f1f5f9;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .exercise-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .exercise-card:hover {
+            border-color: var(--conalep-green);
+            box-shadow: 0 10px 15px -3px rgba(0, 107, 68, 0.1);
+        }
+
         /* Diagrama de Flujo CSS */
         .flow-step {
             border: 2px solid var(--conalep-gold);
@@ -91,15 +112,16 @@
                 <a href="index.html" class="bg-slate-100 p-2.5 rounded-2xl text-conalep hover:bg-conalep hover:text-white transition-all">
                     <i class="fas fa-home"></i>
                 </a>
-                <div>
+                <div class="text-left">
                     <h1 class="font-extrabold text-xl tracking-tight text-slate-900">Estrategia Académica</h1>
                     <p class="text-[10px] font-bold text-emerald-600 uppercase tracking-widest leading-none">COBD-20 • Parcial 2</p>
                 </div>
             </div>
             <div class="hidden md:flex bg-slate-100 p-1.5 rounded-2xl space-x-1">
-                <a href="#semana1" class="text-[10px] font-black uppercase px-4 py-2 rounded-xl hover:bg-white transition-all">S1</a>
-                <a href="#semana2" class="text-[10px] font-black uppercase px-4 py-2 rounded-xl hover:bg-white transition-all">S2</a>
-                <a href="#semana3" class="text-[10px] font-black uppercase px-4 py-2 rounded-xl hover:bg-white transition-all">S3</a>
+                <a href="#consola" class="text-[10px] font-black uppercase px-4 py-2 rounded-xl hover:bg-white transition-all text-slate-600">Comandos</a>
+                <a href="#semana1" class="text-[10px] font-black uppercase px-4 py-2 rounded-xl hover:bg-white transition-all text-slate-600">S1</a>
+                <a href="#semana2" class="text-[10px] font-black uppercase px-4 py-2 rounded-xl hover:bg-white transition-all text-slate-600">S2</a>
+                <a href="#semana3" class="text-[10px] font-black uppercase px-4 py-2 rounded-xl hover:bg-white transition-all text-slate-600">S3</a>
                 <a href="#semana4" class="text-[10px] font-black uppercase px-4 py-2 rounded-xl bg-conalep text-white shadow-md">S4</a>
             </div>
         </div>
@@ -108,139 +130,144 @@
     <!-- Header -->
     <header class="hero-gradient py-24 px-6 relative overflow-hidden text-white border-b-8 border-conalep">
         <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/circuit-board.png')]"></div>
-        <div class="container mx-auto relative z-10">
+        <div class="container mx-auto relative z-10 text-left">
             <div class="flex flex-col md:flex-row items-center justify-between gap-16">
                 <div class="md:w-3/5 text-left">
                     <div class="inline-flex items-center space-x-3 mb-6 bg-emerald-500/10 px-4 py-2 rounded-full border border-emerald-500/20">
-                        <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
-                        <span class="text-emerald-400 font-black tracking-widest text-[10px] uppercase">Unidad 2: Gestión de Información</span>
+                        <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse text-left"></span>
+                        <span class="text-emerald-400 font-black tracking-widest text-[10px] uppercase text-left">Unidad 2: Gestión de Información</span>
                     </div>
-                    <h2 class="text-5xl md:text-7xl font-black mb-8 leading-none tracking-tighter text-white text-left">Manipulación <br>& <span class="text-emerald-500">Consultas</span></h2>
-                    <p class="text-slate-300 text-xl font-medium leading-relaxed max-w-xl">
+                    <h2 class="text-5xl md:text-7xl font-black mb-8 leading-none tracking-tighter text-white text-left">Manipulación <br>& <span class="text-emerald-500 text-left">Consultas</span></h2>
+                    <p class="text-slate-300 text-xl font-medium leading-relaxed max-w-xl text-left text-left">
                         "En esta fase damos vida a los datos. Aprendemos a insertar, actualizar y extraer información valiosa mediante SQL."
                     </p>
-                    <div class="mt-10 flex items-center space-x-6 text-sm font-bold uppercase tracking-widest">
-                        <span class="flex items-center"><i class="fas fa-database text-emerald-500 mr-2 text-lg"></i> 40 Horas Totales</span>
-                        <span class="flex items-center"><i class="fas fa-clock text-emerald-500 mr-2 text-lg"></i> 7 Horas / Sem</span>
+                    <div class="mt-10 flex items-center space-x-6 text-sm font-bold uppercase tracking-widest text-left">
+                        <span class="flex items-center text-left"><i class="fas fa-database text-emerald-500 mr-2 text-lg text-left text-left"></i> 40 Horas Totales</span>
+                        <span class="flex items-center text-left"><i class="fas fa-clock text-emerald-500 mr-2 text-lg text-left"></i> 8 Horas / Sem</span>
                     </div>
                 </div>
-                <div class="md:w-1/3">
+                <div class="md:w-1/3 text-left text-left">
                     <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=600&q=80" class="rounded-[4rem] shadow-2xl border-8 border-slate-800 transform -rotate-2 hover:rotate-0 transition-transform duration-700" alt="Programación SQL">
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-24">
+    <main class="container mx-auto px-6 py-24 text-left">
 
-        <!-- NUEVA SECCIÓN: SQL EN CONSOLA -->
-        <section id="consola" class="mb-32 reveal text-left">
-            <div class="flex items-center space-x-6 mb-12">
-                <div class="bg-slate-800 text-white w-16 h-16 rounded-2xl flex items-center justify-center font-black text-2xl shadow-xl shadow-slate-900/20">
+        <!-- SQL EN CONSOLA: COMANDOS DE ESTRUCTURA -->
+        <section id="consola" class="mb-48 reveal text-left">
+            <div class="flex items-center space-x-6 mb-12 text-left text-left text-left">
+                <div class="bg-slate-800 text-white w-16 h-16 rounded-2xl flex items-center justify-center font-black text-2xl shadow-xl shadow-slate-900/20 text-left">
                     <i class="fas fa-terminal"></i>
                 </div>
-                <div>
-                    <span class="text-slate-500 font-black text-[10px] uppercase tracking-[0.4em] mb-1 block">Preparación Técnica</span>
-                    <h3 class="text-3xl font-black text-slate-900 tracking-tighter uppercase">Iniciando con SQL en Consola</h3>
+                <div class="text-left text-left">
+                    <span class="text-slate-500 font-black text-[10px] uppercase tracking-[0.4em] mb-1 block text-left text-left">Control de Estructuras</span>
+                    <h3 class="text-3xl font-black text-slate-900 tracking-tighter uppercase text-left">Comandos de Preparación (DDL)</h3>
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-16">
-                <div class="space-y-8">
-                    <p class="text-lg text-slate-600 leading-relaxed font-medium">
-                        Antes de escribir código complejo, es vital dominar el entorno de comandos. Sigue estos pasos para interactuar con el motor de base de datos desde la terminal.
-                    </p>
-                    <div class="space-y-4">
-                        <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex items-start space-x-4">
-                            <div class="step-number mt-1">1</div>
-                            <div>
-                                <h5 class="font-black text-slate-900 text-sm uppercase mb-1">Acceso al Sistema</h5>
-                                <p class="text-xs text-slate-500">Abre tu terminal y escribe <code class="bg-slate-100 px-1 rounded text-conalep">mysql -u root -p</code> para iniciar sesión con privilegios de administrador.</p>
+            <div class="grid lg:grid-cols-2 gap-16 text-left text-left text-left">
+                <div class="space-y-10 text-left">
+                    <div class="theory-card text-left text-left text-left">
+                        <h4 class="text-2xl font-black text-slate-900 mb-6 text-left">Gestionando el Servidor</h4>
+                        <p class="text-slate-600 font-medium leading-relaxed mb-8 text-left">
+                            Para poder manipular datos, el administrador debe saber cómo crear y eliminar los contenedores (Bases de Datos y Tablas).
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                            <div class="bg-slate-50 p-6 rounded-3xl border-l-4 border-conalep">
+                                <span class="sql-pill mb-2 inline-block">CREATE</span>
+                                <h5 class="font-black text-xs text-slate-800 uppercase mb-2">Creación</h5>
+                                <p class="text-[10px] text-slate-500 font-medium">Establece nuevas bases de datos o tablas desde cero.</p>
                             </div>
-                        </div>
-                        <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex items-start space-x-4">
-                            <div class="step-number mt-1">2</div>
-                            <div>
-                                <h5 class="font-black text-slate-900 text-sm uppercase mb-1">Exploración de Bases de Datos</h5>
-                                <p class="text-xs text-slate-500">Usa <code class="bg-slate-100 px-1 rounded text-conalep">SHOW DATABASES;</code> para ver qué proyectos existen actualmente en el servidor.</p>
+                            <div class="bg-slate-50 p-6 rounded-3xl border-l-4 border-red-500">
+                                <span class="sql-pill mb-2 inline-block">DROP</span>
+                                <h5 class="font-black text-xs text-slate-800 uppercase mb-2">Eliminación</h5>
+                                <p class="text-[10px] text-slate-500 font-medium">Borra permanentemente estructuras completas.</p>
                             </div>
-                        </div>
-                        <div class="bg-white p-6 rounded-3xl border border-slate-100 shadow-sm flex items-start space-x-4">
-                            <div class="step-number mt-1">3</div>
-                            <div>
-                                <h5 class="font-black text-slate-900 text-sm uppercase mb-1">Activación de Contexto</h5>
-                                <p class="text-xs text-slate-500">Para trabajar en tu proyecto integrador, escribe <code class="bg-slate-100 px-1 rounded text-conalep">USE nombre_de_tu_bd;</code>.</p>
+                            <div class="bg-slate-50 p-6 rounded-3xl border-l-4 border-yellow-500">
+                                <span class="sql-pill mb-2 inline-block">TRUNCATE</span>
+                                <h5 class="font-black text-xs text-slate-800 uppercase mb-2">Limpieza</h5>
+                                <p class="text-[10px] text-slate-500 font-medium">Vacía el contenido de una tabla sin borrar su estructura.</p>
+                            </div>
+                            <div class="bg-slate-50 p-6 rounded-3xl border-l-4 border-blue-500 text-left text-left">
+                                <span class="sql-pill mb-2 inline-block">RENAME</span>
+                                <h5 class="font-black text-xs text-slate-800 uppercase mb-2">Renombrar</h5>
+                                <p class="text-[10px] text-slate-500 font-medium text-left">Cambia el nombre de una tabla existente.</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="relative group">
-                    <div class="terminal-header">
-                        <div class="flex space-x-2">
-                            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-                            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div class="space-y-10 text-left">
+                    <div class="code-window text-left text-left">
+                        <div class="terminal-header text-left">
+                            <div class="flex space-x-2 text-left">
+                                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-green-500 rounded-full text-left"></div>
+                            </div>
+                            <span class="ml-4 text-[10px] text-slate-400 font-mono text-left">Administración de Estructura</span>
                         </div>
-                        <span class="ml-4 text-[10px] text-slate-400 font-mono">Terminal @ conalep-servidor</span>
+                        <pre class="text-[11px] sm:text-[13px] leading-relaxed text-slate-300 text-left text-left">
+<span class="text-slate-500">-- 1. Crear nueva base de datos</span>
+<span class="text-pink-500">CREATE DATABASE</span> sistema_ventas;
+
+<span class="text-slate-500">-- 2. Eliminar base de datos (¡CUIDADO!)</span>
+<span class="text-pink-500">DROP DATABASE</span> sistema_ventas;
+
+<span class="text-slate-500">-- 3. Eliminar una tabla específica</span>
+<span class="text-pink-500">DROP TABLE</span> Clientes;
+
+<span class="text-slate-500">-- 4. Vaciar una tabla sin borrarla</span>
+<span class="text-pink-500">TRUNCATE TABLE</span> Ventas_Temporales;</pre>
                     </div>
-                    <div class="bg-slate-900 p-8 rounded-b-[1.5rem] font-mono text-xs md:text-sm text-emerald-400 shadow-2xl leading-relaxed">
-                        <p class="text-slate-500 mb-2"># Conectando al servidor...</p>
-                        <p><span class="text-white">C:\></span> mysql -u root -p</p>
-                        <p class="text-white">Enter password: ********</p>
-                        <p class="text-yellow-400 mt-4">Welcome to the MySQL monitor. Commands end with ;</p>
-                        <p class="mt-4"><span class="text-white">mysql></span> SHOW DATABASES;</p>
-                        <div class="pl-4 mt-2 text-slate-400">
-                            +--------------------+<br>
-                            | Database           |<br>
-                            +--------------------+<br>
-                            | information_schema |<br>
-                            | <span class="text-emerald-500 font-bold">conalep_p2</span>         |<br>
-                            | mysql              |<br>
-                            +--------------------+
-                        </div>
-                        <p class="mt-4"><span class="text-white">mysql></span> USE conalep_p2;</p>
-                        <p class="text-emerald-500 italic">Database changed.</p>
-                    </div>
-                    <div class="absolute -bottom-6 -right-6 bg-conalep p-4 rounded-2xl text-white shadow-xl max-w-[200px]">
-                        <p class="text-[9px] font-black uppercase tracking-widest mb-1">Nota del Docente:</p>
-                        <p class="text-[10px] font-medium leading-tight">No olvides el punto y coma (;) al final de cada comando SQL.</p>
+                    
+                    <div class="exercise-card text-left">
+                        <h5 class="font-black text-conalep uppercase text-[10px] mb-4 text-left">Práctica de Terminal (2 Horas)</h5>
+                        <p class="text-xs text-slate-600 font-bold mb-4 text-left">ESCENARIO: RESET DE LABORATORIO</p>
+                        <p class="text-[11px] text-slate-500 font-medium italic mb-4">"En tu libreta, redacta la secuencia de comandos para:"</p>
+                        <ul class="text-[10px] text-slate-400 space-y-2 font-bold text-left text-left">
+                            <li>1. Eliminar la base de datos 'prueba_vieja' si existe.</li>
+                            <li>2. Crear la base de datos 'PROYECTO_FINAL'.</li>
+                            <li>3. Listar todas las bases de datos para confirmar.</li>
+                            <li>4. Borrar el contenido de la tabla 'LOGS' sin borrar la tabla misma.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SEMANA 1: DML BÁSICO -->
-        <section id="semana1" class="mb-48 reveal">
+        <!-- SEMANA 1: DML PROFUNDO -->
+        <section id="semana1" class="mb-48 reveal text-left">
             <div class="flex items-center space-x-6 mb-16 text-left">
-                <div class="bg-conalep text-white w-20 h-20 rounded-[2rem] flex items-center justify-center font-black text-3xl shadow-2xl">05</div>
-                <div>
-                    <span class="text-conalep font-black text-xs uppercase tracking-[0.4em] mb-1 block">Semana 1 del Parcial 2</span>
+                <div class="bg-conalep text-white w-20 h-20 rounded-[2rem] flex items-center justify-center font-black text-3xl shadow-2xl text-left">05</div>
+                <div class="text-left text-left">
+                    <span class="text-conalep font-black text-xs uppercase tracking-[0.4em] mb-1 block text-left text-left">Gestión de Contenido</span>
                     <h3 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter uppercase text-left">Lenguaje de Manipulación (DML)</h3>
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-20">
-                <div class="space-y-10 text-left text-left">
-                    <div class="bg-white p-10 rounded-[3rem] shadow-sm border border-slate-100 text-left">
-                        <h4 class="text-2xl font-black text-slate-900 mb-6 flex items-center italic text-left">
-                            <i class="fas fa-edit text-conalep mr-4"></i> ¿Cómo Alterar los Datos?
-                        </h4>
-                        <p class="text-slate-600 leading-relaxed font-medium mb-8 text-left text-left">
-                            El lenguaje **DML (Data Manipulation Language)** nos permite gestionar el contenido de las tablas que creamos en el parcial anterior.
+            <div class="grid lg:grid-cols-2 gap-20 text-left">
+                <div class="space-y-10 text-left">
+                    <div class="theory-card text-left text-left text-left text-left text-left">
+                        <h4 class="text-2xl font-black text-slate-900 mb-6 text-left">Comandos de Acción Directa</h4>
+                        <p class="text-slate-600 font-medium leading-relaxed mb-8 text-left text-left">
+                            La manipulación de datos requiere precisión. Un comando mal ejecutado sin un filtro <code class="bg-slate-100 px-1 rounded text-conalep">WHERE</code> puede alterar o borrar toda la base de datos de la empresa.
                         </p>
-                        <div class="space-y-4 text-left">
-                            <div class="flex items-start p-4 bg-slate-50 rounded-2xl text-left">
-                                <span class="sql-pill mr-4 text-left">INSERT</span>
-                                <p class="text-sm text-slate-500 text-left">Agrega nuevas filas a la tabla.</p>
+                        
+                        <div class="space-y-6 text-left text-left text-left text-left text-left">
+                            <div class="border-l-4 border-emerald-500 pl-4 py-2 text-left">
+                                <h5 class="font-black text-sm text-slate-800 uppercase text-left">1. Carga de Datos (INSERT)</h5>
+                                <p class="text-xs text-slate-500 text-left">Se utiliza para poblar las tablas. Podemos insertar un solo registro o múltiples filas en una sola instrucción.</p>
                             </div>
-                            <div class="flex items-start p-4 bg-slate-50 rounded-2xl text-left">
-                                <span class="sql-pill mr-4">UPDATE</span>
-                                <p class="text-sm text-slate-500 text-left">Modifica datos existentes (Requiere cuidado con el WHERE).</p>
+                            <div class="border-l-4 border-yellow-500 pl-4 py-2 text-left">
+                                <h5 class="font-black text-sm text-slate-800 uppercase text-left">2. Mantenimiento (UPDATE)</h5>
+                                <p class="text-xs text-slate-500 text-left text-left">Para corregir errores o actualizar estados (ej. cambiar el precio de un producto).</p>
                             </div>
-                            <div class="flex items-start p-4 bg-slate-50 rounded-2xl text-left">
-                                <span class="sql-pill mr-4">DELETE</span>
-                                <p class="text-sm text-slate-500 text-left">Elimina registros de forma permanente.</p>
+                            <div class="border-l-4 border-red-500 pl-4 py-2 text-left text-left text-left text-left">
+                                <h5 class="font-black text-sm text-slate-800 uppercase text-left">3. Depuración (DELETE)</h5>
+                                <p class="text-xs text-slate-500 text-left">Elimina filas específicas. Es una acción irreversible en la mayoría de los casos.</p>
                             </div>
                         </div>
                     </div>
@@ -249,67 +276,65 @@
                 <div class="space-y-10 text-left">
                     <div class="code-window text-left">
                         <div class="flex justify-between items-center mb-6 text-left">
-                            <div class="flex space-x-2 text-left">
-                                <div class="w-3 h-3 bg-red-500 rounded-full text-left"></div>
-                                <div class="w-3 h-3 bg-yellow-500 rounded-full text-left"></div>
-                                <div class="w-3 h-3 bg-green-500 rounded-full text-left text-left"></div>
-                            </div>
-                            <span class="text-[9px] font-black text-slate-600 uppercase text-left">Sintaxis DML</span>
+                            <span class="text-[10px] font-black text-emerald-500 uppercase text-left text-left">Laboratorio SQL: Manipulación Real</span>
                         </div>
-                        <pre class="text-[12px] sm:text-[14px] leading-relaxed text-slate-300 text-left text-left">
-<span class="text-slate-500">-- Insertar un alumno</span>
-<span class="text-pink-500">INSERT INTO</span> Alumnos (id, nombre) 
-<span class="text-pink-500">VALUES</span> (1, <span class="text-emerald-400">'Juan Perez'</span>);
+                        <pre class="text-[12px] sm:text-[14px] leading-relaxed text-slate-300 text-left">
+<span class="text-slate-500 text-left">-- Inserción múltiple de productos</span>
+<span class="text-pink-500 text-left">INSERT INTO</span> Productos (id, nombre, precio, stock) 
+<span class="text-pink-500 text-left">VALUES</span> 
+(1, <span class="text-emerald-400">'Teclado Gamer'</span>, 450.00, 15),
+(2, <span class="text-emerald-400">'Mouse Óptico'</span>, 180.50, 30);
 
-<span class="text-slate-500">-- Cambiar nombre</span>
-<span class="text-pink-500">UPDATE</span> Alumnos <span class="text-pink-500">SET</span> nombre = <span class="text-emerald-400">'Juan P.'</span> 
-<span class="text-pink-500">WHERE</span> id = 1;
-
-<span class="text-slate-500">-- ¡CUIDADO! Sin WHERE borras TODO</span>
-<span class="text-pink-500">DELETE FROM</span> Alumnos <span class="text-pink-500">WHERE</span> id = 1;</pre>
+<span class="text-slate-500">-- Actualización con cálculo</span>
+<span class="text-pink-500">UPDATE</span> Productos 
+<span class="text-pink-500">SET</span> precio = precio * 1.15 
+<span class="text-pink-500">WHERE</span> stock < 10;</pre>
                     </div>
-                    <div class="bg-slate-900 p-8 rounded-[3rem] text-white shadow-2xl border-l-8 border-conalep text-left text-left">
-                        <h5 class="text-emerald-400 font-black text-xs uppercase mb-4 tracking-widest text-left">Reto Semanal 5</h5>
-                        <p class="text-xs text-slate-400 font-medium leading-relaxed italic text-left">
-                            "En tu libreta: Escribe los comandos para insertar 3 productos en una tienda y luego actualiza el precio del segundo producto subiéndole un 10%."
-                        </p>
+
+                    <div class="exercise-card text-left text-left">
+                        <h5 class="font-black text-conalep uppercase text-xs mb-4 text-left">Taller Práctico S5 (8 Horas)</h5>
+                        <p class="text-xs text-slate-600 font-bold mb-4 text-left">CASO: FARMACIA DEL CENTRO</p>
+                        <ul class="text-[11px] text-slate-500 space-y-3 font-medium text-left">
+                            <li class="flex items-start text-left"><i class="fas fa-check text-conalep mt-1 mr-3 text-left"></i> 1. Crea el script para insertar 10 medicamentos con diferentes categorías.</li>
+                            <li class="flex items-start text-left"><i class="fas fa-check text-conalep mt-1 mr-3 text-left"></i> 2. Aplica un descuento del 20% a todos los productos de la categoría 'Infantil'.</li>
+                            <li class="flex items-start text-left"><i class="fas fa-check text-conalep mt-1 mr-3 text-left"></i> 3. Elimina a los proveedores que no tengan teléfono registrado.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SEMANA 2: CONSULTAS SELECT -->
+        <!-- SEMANA 2: DQL AVANZADO -->
         <section id="semana2" class="mb-48 reveal text-left">
             <div class="flex items-center space-x-6 mb-16 text-left">
-                <div class="bg-conalep text-white w-20 h-20 rounded-[2rem] flex items-center justify-center font-black text-3xl shadow-2xl shadow-emerald-900/40 text-left">06</div>
+                <div class="bg-conalep text-white w-20 h-20 rounded-[2rem] flex items-center justify-center font-black text-3xl shadow-2xl shadow-emerald-900/40 text-left text-left">06</div>
                 <div>
-                    <span class="text-conalep font-black text-xs uppercase tracking-[0.4em] mb-1 block text-left">Semana de Reportes</span>
-                    <h3 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter uppercase text-left">Consultas SQL (DQL)</h3>
+                    <span class="text-conalep font-black text-xs uppercase tracking-[0.4em] mb-1 block text-left">Semana de Inteligencia de Negocios</span>
+                    <h3 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter uppercase text-left">Consultas y Reportes (DQL)</h3>
                 </div>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-20 text-left">
-                <div class="space-y-10 text-left text-left">
-                    <div class="theory-card text-left text-left">
-                        <h4 class="text-2xl font-black text-slate-900 mb-6 leading-tight text-left">El poder del <span class="text-conalep">SELECT</span></h4>
-                        <p class="text-slate-600 font-medium leading-relaxed mb-8 text-left text-left text-left">
-                            Extraer información específica es la tarea más común. Aprendemos a usar filtros para generar reportes inteligentes.
+                <div class="space-y-10 text-left">
+                    <div class="theory-card text-left">
+                        <h4 class="text-2xl font-black text-slate-900 mb-6 text-left">Extracción y Agregación</h4>
+                        <p class="text-slate-600 font-medium leading-relaxed mb-8 text-left text-left">
+                            No basta con ver los datos, hay que resumirlos. SQL ofrece **Funciones de Agregado** para obtener estadísticas instantáneas.
                         </p>
-                        
-                        <div class="grid gap-4 text-left">
-                            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100 text-left">
-                                <h5 class="font-black text-xs text-slate-800 uppercase mb-2">Operadores Lógicos</h5>
-                                <p class="text-[11px] text-slate-500 font-bold uppercase tracking-widest">AND • OR • NOT • BETWEEN • LIKE</p>
+                        <div class="grid grid-cols-2 gap-4 text-left">
+                            <div class="bg-slate-50 p-4 rounded-xl text-left text-left">
+                                <span class="sql-pill text-left">COUNT()</span>
+                                <p class="text-[10px] text-slate-400 mt-2 text-left">Cuenta registros.</p>
                             </div>
-                            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100 text-left">
-                                <h5 class="font-black text-xs text-slate-800 uppercase mb-2">Ordenamiento</h5>
-                                <p class="text-[11px] text-slate-500 font-bold uppercase tracking-widest">ORDER BY (ASC / DESC)</p>
+                            <div class="bg-slate-50 p-4 rounded-xl text-left text-left">
+                                <span class="sql-pill text-left text-left">SUM()</span>
+                                <p class="text-[10px] text-slate-400 mt-2 text-left text-left">Suma valores.</p>
                             </div>
                         </div>
                     </div>
-
-                    <div class="bg-white p-10 rounded-[3rem] shadow-xl border-t-8 border-conalep text-left text-left text-left">
-                        <h5 class="font-black text-slate-900 uppercase text-xs tracking-widest mb-6">Ejemplo Visual de Selección</h5>
+                    
+                    <div class="bg-white p-10 rounded-[3rem] shadow-xl border-t-8 border-conalep text-left text-left">
+                        <h5 class="font-black text-slate-900 uppercase text-xs tracking-widest mb-6">Flujo de Consulta</h5>
                         <div class="space-y-4 text-left">
                             <div class="flow-step">1. Identificar Tabla (FROM)</div>
                             <div class="flow-arrow"></div>
@@ -320,138 +345,104 @@
                     </div>
                 </div>
 
-                <div class="space-y-10 text-left text-left">
+                <div class="space-y-10 text-left">
                     <div class="code-window text-left">
-                        <pre class="text-[12px] sm:text-[14px] leading-relaxed text-slate-300 text-left text-left text-left text-left">
-<span class="text-slate-500">-- Buscar productos caros</span>
-<span class="text-pink-500">SELECT</span> nombre, precio 
-<span class="text-pink-500">FROM</span> Productos 
-<span class="text-pink-500">WHERE</span> precio > 500 
-<span class="text-pink-500">ORDER BY</span> precio <span class="text-pink-500">DESC</span>;
-
-<span class="text-slate-500">-- Buscar alumnos por apellido</span>
-<span class="text-pink-500">SELECT</span> * <span class="text-pink-500">FROM</span> Alumnos 
-<span class="text-pink-500">WHERE</span> nombre <span class="text-pink-500">LIKE</span> <span class="text-emerald-400">'Gomez%'</span>;</pre>
+                        <pre class="text-[12px] sm:text-[14px] leading-relaxed text-slate-300 text-left text-left">
+<span class="text-slate-500 italic">-- Reporte de ventas totales por día</span>
+<span class="text-pink-500 font-bold">SELECT</span> fecha, <span class="text-pink-500 font-bold">SUM</span>(total) <span class="text-pink-500 font-bold">AS</span> ingreso_diario 
+<span class="text-pink-500 font-bold">FROM</span> Ventas 
+<span class="text-pink-500 font-bold">GROUP BY</span> fecha;</pre>
                     </div>
-                    <div class="bg-white p-8 rounded-[3rem] border border-slate-100 shadow-sm text-left">
-                        <h5 class="text-xs font-black uppercase mb-4 flex items-center text-left text-left">
-                            <i class="fas fa-clipboard-check text-conalep mr-3"></i> Práctica S6: "El Analista"
-                        </h5>
-                        <p class="text-[11px] text-slate-500 font-medium leading-relaxed italic text-left text-left text-left">
-                            "Imagina que eres el gerente de una Pozolería en Chilpancingo. En tu libreta, redacta 3 consultas SQL para: <br>
-                            1. Ver todos los platos de menos de $100. <br>
-                            2. Listar clientes que se apelliden 'Navarrete'. <br>
-                            3. Ver ventas ordenadas de la más reciente a la más vieja."
-                        </p>
+
+                    <div class="exercise-card text-left">
+                        <h5 class="font-black text-conalep uppercase text-xs mb-4 text-left">Taller de Reporteo S6 (8 Horas)</h5>
+                        <p class="text-xs text-slate-600 font-bold mb-4 text-left text-left text-left">ESCENARIO: CONTROL ESCOLAR</p>
+                        <div class="space-y-4 text-[11px] text-slate-500 font-medium text-left">
+                            <p class="text-left"><strong class="text-slate-800 text-left">1. El Estadístico:</strong> Escribe una consulta para saber cuántos alumnos hay inscritos en cada carrera.</p>
+                            <p class="text-left text-left text-left text-left text-left"><strong class="text-slate-800 text-left">2. El Auditor:</strong> Lista los nombres de alumnos que tengan un promedio mayor a 9.0.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SEMANA 3: DISPARADORES (TRIGGERS) -->
-        <section id="semana3" class="mb-48 reveal text-left text-left text-left">
+        <!-- SEMANA 3: TRIGGERS AVANZADOS -->
+        <section id="semana3" class="mb-48 reveal text-left">
             <div class="flex items-center space-x-6 mb-16 text-left">
-                <div class="bg-conalep text-white w-20 h-20 rounded-[2rem] flex items-center justify-center font-black text-3xl shadow-2xl">07</div>
-                <div class="text-left">
+                <div class="bg-conalep text-white w-20 h-20 rounded-[2rem] flex items-center justify-center font-black text-3xl shadow-2xl text-left">07</div>
+                <div class="text-left text-left">
                     <span class="text-conalep font-black text-xs uppercase tracking-[0.4em] mb-1 block text-left">Semana de Automatización</span>
                     <h3 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter uppercase text-left">Disparadores (Triggers)</h3>
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-20 text-left text-left text-left">
-                <div class="space-y-12 text-left">
+            <div class="grid lg:grid-cols-2 gap-20 text-left">
+                <div class="space-y-10 text-left text-left text-left">
                     <div class="theory-card text-left text-left">
-                        <h4 class="text-2xl font-black text-slate-900 mb-6">Programación Automática</h4>
-                        <p class="text-slate-600 font-medium leading-relaxed mb-8 text-left text-left">
-                            Un **Trigger** es un programa que se ejecuta automáticamente cuando ocurre un evento (INSERT, UPDATE, DELETE). Es ideal para llevar auditorías o actualizar inventarios solos.
+                        <h4 class="text-2xl font-black text-slate-900 mb-6 text-left">Lógica de Eventos</h4>
+                        <p class="text-slate-600 font-medium leading-relaxed mb-8 text-left text-left text-left">
+                            Los disparadores permiten que la base de datos se "defienda" o "reaccione" sola. Usamos las palabras clave <code class="bg-slate-100 px-1 rounded text-conalep">OLD</code> y <code class="bg-slate-100 px-1 rounded text-conalep">NEW</code>.
                         </p>
-                        <div class="space-y-4 text-left">
-                            <div class="flex items-center space-x-4 text-left text-left">
-                                <span class="bg-emerald-100 text-conalep w-8 h-8 rounded-full flex items-center justify-center font-black text-xs text-left">A</span>
-                                <p class="text-xs text-slate-500"><strong>BEFORE:</strong> Antes de que el cambio se guarde.</p>
-                            </div>
-                            <div class="flex items-center space-x-4 text-left">
-                                <span class="bg-emerald-100 text-conalep w-8 h-8 rounded-full flex items-center justify-center font-black text-xs text-left text-left text-left">B</span>
-                                <p class="text-xs text-slate-500 text-left"><strong>AFTER:</strong> Después de que el cambio fue exitoso.</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-                <div class="space-y-10 text-left">
+                <div class="space-y-10 text-left text-left">
                     <div class="code-window text-left">
-                        <pre class="text-[12px] sm:text-[13px] leading-relaxed text-slate-300 text-left">
-<span class="text-slate-500 italic">-- Actualizar stock al vender</span>
-<span class="text-pink-500 font-bold">CREATE TRIGGER</span> tr_DescontarStock
-<span class="text-pink-500 font-bold">AFTER INSERT ON</span> Ventas
+                        <pre class="text-[12px] sm:text-[13px] leading-relaxed text-slate-300 text-left text-left">
+<span class="text-slate-500 italic">-- Auditoría de Precios</span>
+<span class="text-pink-500 font-bold">CREATE TRIGGER</span> audit_cambio_precio
+<span class="text-pink-500 font-bold">BEFORE UPDATE ON</span> Productos
 <span class="text-pink-500 font-bold">FOR EACH ROW</span>
 <span class="text-pink-500 font-bold">BEGIN</span>
-    <span class="text-pink-500 font-bold">UPDATE</span> Productos 
-    <span class="text-pink-500 font-bold">SET</span> stock = stock - <span class="text-yellow-400">NEW</span>.cantidad
-    <span class="text-pink-500 font-bold">WHERE</span> id = <span class="text-yellow-400">NEW</span>.id_prod;
+    <span class="text-pink-500 font-bold">INSERT INTO</span> Historial (id_prod, anterior)
+    <span class="text-pink-500 font-bold">VALUES</span> (<span class="text-yellow-400">OLD</span>.id, <span class="text-yellow-400">OLD</span>.precio);
 <span class="text-pink-500 font-bold">END</span>;</pre>
                     </div>
-                    <div class="bg-slate-900 p-8 rounded-[3rem] text-white shadow-2xl text-left text-left">
-                        <h5 class="text-xs font-black uppercase mb-4 text-emerald-400 tracking-widest text-left text-left">Análisis de Lógica S7</h5>
-                        <p class="text-xs text-slate-300 font-medium leading-relaxed italic text-left">
-                            "Explica en tu libreta: ¿Por qué es mejor usar un Trigger para descontar stock en lugar de hacerlo manualmente cada vez que vendemos?"
-                        </p>
+
+                    <div class="exercise-card text-left">
+                        <h5 class="font-black text-conalep uppercase text-xs mb-4 text-left">Práctica de Automatización S7 (8 Horas)</h5>
+                        <p class="text-[11px] text-slate-500 font-medium text-left"><strong>1. Auditoría de Borrado:</strong> Crea un trigger que cuando se elimine un Alumno, sus datos se guarden automáticamente en una tabla llamada 'Bajas'.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SEMANA 4: VISTAS Y PROYECTO -->
-        <section id="semana4" class="mb-48 reveal text-left text-left text-left">
+        <!-- SEMANA 4: VISTAS Y CIERRE -->
+        <section id="semana4" class="mb-48 reveal text-left">
             <div class="flex items-center space-x-6 mb-16 text-left">
-                <div class="bg-conalep text-white w-20 h-20 rounded-[2rem] flex items-center justify-center font-black text-3xl shadow-2xl">08</div>
+                <div class="bg-conalep text-white w-20 h-20 rounded-[2rem] flex items-center justify-center font-black text-3xl shadow-2xl text-left text-left">08</div>
                 <div>
-                    <span class="text-conalep font-black text-xs uppercase tracking-[0.4em] mb-1 block text-left">Semana de Cierre</span>
+                    <span class="text-conalep font-black text-xs uppercase tracking-[0.4em] mb-1 block text-left">Semana de Presentación</span>
                     <h3 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tighter uppercase text-left">Vistas y Proyecto Final P2</h3>
                 </div>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-20 text-left text-left text-left">
+            <div class="grid lg:grid-cols-2 gap-20 text-left">
                 <div class="space-y-12 text-left">
-                    <div class="theory-card text-left text-left">
-                        <h4 class="text-2xl font-black text-slate-900 mb-6 uppercase tracking-tighter text-left">Vistas (Views)</h4>
-                        <p class="text-slate-600 font-medium leading-relaxed mb-8 text-left text-left">
-                            Una **Vista** es una "Tabla Virtual". Guarda una consulta compleja para que no tengas que escribirla una y otra vez. Protege los datos mostrando solo lo necesario.
+                    <div class="theory-card text-left text-left text-left text-left">
+                        <h4 class="text-2xl font-black text-slate-900 mb-6 text-left">Abstracción y Seguridad</h4>
+                        <p class="text-slate-600 font-medium leading-relaxed mb-8 text-left text-left text-left text-left">
+                            Las **Vistas** son capas de seguridad. Permiten que un empleado vea el inventario pero no el costo de compra del proveedor.
                         </p>
-                        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100 text-left">
-                            <span class="sql-pill mb-4 inline-block text-left text-left">CREATE VIEW</span>
-                            <p class="text-xs text-slate-500 font-medium leading-relaxed italic text-left text-left">
-                                "Crea una vista llamada 'Nomina' que oculte el sueldo de los empleados pero muestre sus horas trabajadas."
-                            </p>
-                        </div>
                     </div>
                 </div>
 
-                <div class="bg-conalep p-10 rounded-[4rem] text-white shadow-2xl border-b-8 border-emerald-900 text-left text-left">
-                    <h4 class="text-xl font-black mb-8 flex items-center text-left text-left">
-                        <i class="fas fa-rocket mr-4 text-gold"></i> PROYECTO PARCIAL 2
-                    </h4>
-                    <p class="text-sm font-bold mb-6 italic underline">Checklist de Implementación Funcional:</p>
-                    <ul class="space-y-5 text-sm font-medium text-left">
-                        <li class="flex items-start text-left">
-                            <i class="fas fa-check-square mr-3 mt-1 text-emerald-300"></i>
-                            <span>Llenado de al menos 20 registros reales por tabla.</span>
-                        </li>
-                        <li class="flex items-start text-left text-left">
-                            <i class="fas fa-check-square mr-3 mt-1 text-emerald-300"></i>
-                            <span>Creación de 5 Consultas de Reporte (SELECT).</span>
-                        </li>
-                        <li class="flex items-start text-left text-left text-left">
-                            <i class="fas fa-check-square mr-3 mt-1 text-emerald-300"></i>
-                            <span>Implementación de 1 Trigger de automatización.</span>
-                        </li>
-                        <li class="flex items-start text-left text-left text-left">
-                            <i class="fas fa-check-square mr-3 mt-1 text-emerald-300 text-left text-left text-left"></i>
-                            <span>Generación de 2 Vistas para el usuario final.</span>
-                        </li>
-                    </ul>
-                    <div class="mt-10 p-6 bg-white/10 rounded-3xl border border-white/20 text-xs italic text-left">
-                        "La entrega final debe ser el Script SQL ejecutándose sin errores en el laboratorio."
+                <div class="space-y-10 text-left text-left">
+                    <div class="code-window text-left">
+                        <pre class="text-[12px] sm:text-[13px] leading-relaxed text-slate-300 text-left text-left text-left text-left text-left">
+<span class="text-slate-500 italic">-- Crear vista de catálogo</span>
+<span class="text-pink-500 font-bold">CREATE VIEW</span> v_CatalogoPublico <span class="text-pink-500 font-bold">AS</span>
+<span class="text-pink-500 font-bold">SELECT</span> nombre, marca, precio_venta 
+<span class="text-pink-500 font-bold">FROM</span> Productos;</pre>
+                    </div>
+
+                    <div class="bg-conalep p-10 rounded-[3rem] text-white shadow-2xl text-left">
+                        <h4 class="text-xl font-black mb-6 flex items-center text-left">
+                            <i class="fas fa-rocket mr-4 text-gold"></i> ENTREGA PARCIAL 2
+                        </h4>
+                        <div class="bg-white/10 p-5 rounded-2xl border border-white/20 text-xs italic text-left text-left text-left">
+                            "Debes presentar un script que cree tu base de datos, inserte 20 registros, genere 3 reportes estadísticos y tenga 1 disparador de auditoría activo."
+                        </div>
                     </div>
                 </div>
             </div>
@@ -462,20 +453,20 @@
             <div class="inline-block p-16 bg-white rounded-[5rem] shadow-2xl border border-slate-50 max-w-4xl relative overflow-hidden group text-left">
                 <div class="absolute -top-20 -right-20 w-64 h-64 bg-emerald-500/10 rounded-full blur-[80px] text-left text-left"></div>
                 
-                <div class="relative z-10 text-left text-left text-left text-left">
-                    <div class="text-conalep text-6xl mb-10 group-hover:scale-110 transition-transform duration-700 text-left text-left">
+                <div class="relative z-10 text-left">
+                    <div class="text-conalep text-6xl mb-10 group-hover:scale-110 transition-transform duration-700 text-left">
                         <i class="fas fa-server"></i>
                     </div>
-                    <h4 class="text-4xl font-black mb-6 text-slate-900 tracking-tighter uppercase text-left text-left">Gestión de Datos Dominada</h4>
-                    <p class="text-slate-500 text-lg font-medium mb-12 leading-relaxed max-w-2xl mx-auto italic text-center">
+                    <h4 class="text-4xl font-black mb-6 text-slate-900 tracking-tighter uppercase text-left">Gestión de Datos Dominada</h4>
+                    <p class="text-slate-500 text-lg font-medium mb-12 leading-relaxed max-w-2xl mx-auto italic text-center text-left text-left text-left text-left">
                         "Has aprendido a darle vida a la información. El Parcial 3 nos llevará al nivel profesional: Seguridad, Transacciones y Respaldo."
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-6 text-left">
-                        <a href="index.html" class="inline-flex items-center justify-center space-x-4 bg-slate-900 text-white px-12 py-5 rounded-3xl font-black hover:bg-black transition-all shadow-xl text-xs uppercase tracking-widest text-left text-left">
+                        <a href="index.html" class="inline-flex items-center justify-center space-x-4 bg-slate-900 text-white px-12 py-5 rounded-3xl font-black hover:bg-black transition-all shadow-xl text-xs uppercase tracking-widest text-left text-left text-left">
                             <i class="fas fa-home"></i>
                             <span>Menú Principal</span>
                         </a>
-                        <button onclick="window.scrollTo(0,0)" class="inline-flex items-center justify-center space-x-4 bg-conalep text-white px-12 py-5 rounded-3xl font-black hover:opacity-90 transition-all shadow-xl text-xs uppercase tracking-widest border-b-4 border-emerald-900 text-left text-left">
+                        <button onclick="window.scrollTo(0,0)" class="inline-flex items-center justify-center space-x-4 bg-conalep text-white px-12 py-5 rounded-3xl font-black hover:opacity-90 transition-all shadow-xl text-xs uppercase tracking-widest border-b-4 border-emerald-900 text-left">
                             <i class="fas fa-chevron-up"></i>
                             <span>Subir</span>
                         </button>
@@ -486,17 +477,10 @@
 
     </main>
 
-    <footer class="bg-slate-900 py-24 text-center border-t-[12px] border-conalep text-left text-left text-left">
-        <div class="container mx-auto px-6 text-left">
-            <div class="max-w-2xl mx-auto space-y-6 text-left">
-                <p class="text-emerald-500 font-black uppercase tracking-[0.6em] text-xs text-left">CONALEP Plantel Chilpancingo</p>
-                <p class="text-slate-400 text-[11px] font-bold tracking-[0.2em] uppercase leading-relaxed text-center text-left">
-                    Profesional Técnico-Bachiller en Informática <br> 
-                    Chilpancingo de los Bravo, Guerrero
-                </p>
-                <div class="h-px w-24 bg-slate-800 mx-auto mt-10 text-left text-left"></div>
-                <p class="text-slate-600 text-[9px] font-black uppercase tracking-[0.4em] pt-6 text-left">© Unidad 2: Gestión y Aprovechamiento de Información</p>
-            </div>
+    <footer class="bg-slate-900 py-24 text-center border-t-[12px] border-conalep text-left text-left text-left text-left">
+        <div class="container mx-auto px-6 text-left text-left text-left text-left text-left">
+            <p class="text-emerald-500 font-black uppercase tracking-[0.6em] text-xs text-left">CONALEP Plantel Chilpancingo</p>
+            <p class="text-slate-600 text-[9px] font-black uppercase tracking-[0.4em] pt-6 text-left">© Unidad 2: Gestión y Aprovechamiento de Información</p>
         </div>
     </footer>
 
